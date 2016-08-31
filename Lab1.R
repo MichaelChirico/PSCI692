@@ -31,7 +31,7 @@ cat("Hello World")
 ##   which is a managed plethora of packages,
 ##   all of which have to meet some minimum
 ##   standards of quality/documentation
-install.packages("data.table")
+##install.packages("data.table")
 
 ## Loading the library
 library(data.table)
@@ -43,6 +43,8 @@ library(data.table)
 ##   than the native read.csv available in R; 
 ##   you won't typically notice unless the file has
 ##   in excess of 100,000 observations.
+## Recommended reading: Getting started guides for data.table
+##   https://github.com/Rdatatable/data.table/wiki/Getting-started
 toy_data <- fread("ToyDataset_Jun30.csv")
 
 ## Summarize the data to get a quick glance
@@ -63,11 +65,28 @@ flight_vars <- grep("^flights", names(toy_data), value = TRUE)
 setnames(toy_data,
          flight_vars, gsub("^flights", "plane", flight_vars))
 
+## Reshaping -- goal is to aggregate all of the
+##   flights column into one for each individual
+### First, reshape long -- each individual now has one row for
+###   each of the flight* columns
 toy_data_long <- melt(toy_data, measure.vars = patterns("^plane"),
                       variable.name = "year", value.name = "plane")
 
-## Aggregation
-toy_data_long[ , sum(plane), by = year]
+### Remove the year column in order to aggregate concisely, see
+###   discussion here: https://github.com/Rdatatable/data.table/issues/1833
+toy_data_long[ , year := NULL]
+
+## Now reshape wide again, specifying to aggregate plane1 by summing
+toy_data <- dcast(toy_data_long, ... ~ ., value.var = "plane", fun.aggregate = sum)
+setnames(toy_data, ".", "plane")
+
+###**Advanced**
+###  As an alternative, we could have skipped the reshaping and just
+###    done the following on the original table:
+###    toy_data[ , plane := Reduce("+", .SD),
+###             .SDcols = grep("^plane", names(toy_data), value = TRUE)]
+###  Then removed the old columns with
+###    toy_data[ , grep("^plane.+", names(toy_data), value = TRUE) := NULL]
 
 ## Reorder data
 setorder(toy_data_long, Timestamp, Name, Birthday, Birthplace)
@@ -113,15 +132,57 @@ toy_data[is.na(bday), bday :=
 # Descriptive Stats ####
 
 toy_data[ , table(gender)]
-toy_data[ , summary(height_num), by = male]
-toy_data[ , summary(hairlength_num), by = male]
+toy_data[ , {
+  x <- summary(height_num)
+  .(names(x), x)}, by = male
+  ][ , dcast(.SD, V1 ~ male, value.var = "V2")]
+toy_data[ , {
+  x <- summary(hairlength_num)
+  .(names(x), x)}, by = male
+  ][ , dcast(.SD, V1 ~ male, value.var = "V2")]
 
 # Merging ####
-install.packages("haven")
+##install.packages("haven")
 library(haven)
-names <- setDT(read_dta("Names.dta"))
+name_dt <- setDT(read_dta("Names.dta"))
 
-toy_data <- names[toy_data, on = c(name = "Name")]
+toy_data <- name_dt[toy_data, on = c(name = "Name")]
+
+## We missed about half of the matches!
+##   String data is the worst. But it's ubiquitous.
+##   Luckily, there's fuzzy matching!
+##   Basically, to clean up, we will use the
+##   Levenshtein Edit Distance
+##   (https://en.wikipedia.org/wiki/Levenshtein_distance)
+##   to try and match any stragglers. This is much
+##   slower in general than is straight up matching,
+##   since we need to compute n(n+1)/2 distances.
+
+matched <- toy_data[!is.na(firstname), unique(name)]
+
+lev_mat <- 
+  adist(toy_data[ , setdiff(name, matched)],
+        name_dt[ , setdiff(name, matched)],
+        ignore.case = TRUE)
+rownames(lev_mat) <- toy_data[ , setdiff(name, matched)]
+colnames(lev_mat) <- name_dt[ , setdiff(name, matched)]
+cbind(colnames(lev_mat)[apply(lev_mat, 1L, which.min)],
+      apply(lev_mat, 1L, min))
+
+### Observing, we see most strings have matched quite well,
+###   but there are a few that are clearly non-matches.
+###   We can take care of that in this case by setting
+###   a matching threshold -- 9 will work fine here.
+lev_mat[lev_mat > 9] <- NA
+fuz_match <- apply(lev_mat, 1L, which.min)
+fuz_match <- fuz_match[lengths(fuz_match) > 0]
+
+toy_data[ , fuz_name := name]
+toy_data[data.table(name = names(fuz_match),
+                    fuz_name = sapply(fuz_match, names)),
+         fuz_name := i.fuz_name, on = "name"]
+
+toy_data <- name_dt[toy_data, on = c(name = "fuz_name")]
 
 # Graphing ####
 ## Basic Lines
