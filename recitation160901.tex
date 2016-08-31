@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\usepackage{amsfonts}
+
+\begin{document}
+
+\title{Recitation 1}
+\author{Michael Chirico}
+
+\maketitle
+
+\section{Pass the Pigs}
+
+Pass the pigs is a silly dice-like game now produced by Xingcolo, once produced by Milton Bradley:
+
+https://www.amazon.com/exec/obidos/ASIN/B00005JG3Y/probabilitandpig
+
+Players take turns rolling a pair of dice-sized rubber pigs. Depending on how they land, you accumulate points. On each turn, you continue to roll and accumulate points until you choose to pass or until a ``stop'' formation is rolled, at which point your turn ends automatically and you forfeit all points gained on that turn. 
+
+Like a dice, there are six possible outcomes of a roll of a single pig; unlike a dice, the probability of each occurring is not equal.
+
+It's not clear \textit{ex ante} what the exact probability of each outcome actually is; luckily some time-rich fellow named Freddie W. paid some students to conduct an experiment consisting of 3,939 rolls of the pigs, which gives a sort of empirical distribution of the outcomes, show in Table \ref{tbl:pigout}:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|r|c|c|}
+\hline
+Roll Type & Number of Rolls & Proportion \\
+\hline
+Blank & 1,344 & .341 \\
+\hline
+Dot & 1,294 & .329 \\
+\hline
+Razorback & 767 & .195 \\
+\hline
+Trotter & 365 & .092 \\
+\hline
+Snouter & 137 & .035 \\
+\hline
+Leaning Jowler & 32 & .008 \\
+\hline
+\end{tabular}
+\caption{Empirical Likelihood of Pig Roll Types}
+\label{tbl:pigout}
+\end{table}
+
+\begin{enumerate}
+\item What is the probability of rolling a single razorback? (Recall that a roll consists of rolling two pigs at once)
+\item What is the probability of rolling a pig-out (one Blank and one Dot)?
+\item What is the probability of rolling a double leaning jowler?
+\item What is the probability of rolling mixed (neither pig is a Dot or a Blank, and the pigs are different)?
+\end{enumerate}
+
+\section{Refugee Screening}
+
+There are about 7 billion people in the world. About 23 million of them live in Syria.
+
+Let's say there are 200,000 terrorists in the world, 30,000 of whom are in Syria.
+
+\begin{enumerate}
+\item Given these rough estimates, what is the probability that a randomly selected person in the world is a terrorist?
+\item Given that someone is a terrorist, what is the probability that they are Syrian?
+\item You're screening refugees and hoping to weed out any terrorist posing as a refugee. Given that you know the refugee is Syrian, what is the probability they are a terrorist? That is, what is $\mathbb{P}[terrorist|Syrian]$?
+\item \textit{(open-ended/framing thoughts moving forward)} This is of course a simplistic interpretation of the problem of refugee screening. Why does the simplistic analysis break down? What are other important considerations? What assumptions are violated?
+\end{enumerate}
+
+\end{document}
