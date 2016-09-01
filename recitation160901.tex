@@ -9,6 +9,23 @@
 
 \maketitle
 
+\section{Old-School Probability Basics}
+
+\begin{enumerate}
+\item You and a friend each roll a single, unweighted die. What is the probability that your rolls differ by more than two pips?
+\item Pick a point on the unit square at random (that is, pick two real numbers between 0 and 1 at random). What is the probability they lie in the inscribed circle of the unit square (i.e., the circle which lies inside the square and is tangent to all of its sides)? How could we use this to estimate the value of $\pi$? (Note: while simple, this is a terrible way to estimate $\pi$, and nobody should be estimating $\pi$ anymore anyway. For actual real-world ways to estimate $\pi$ and more discussion, see http://stackoverflow.com/questions/19/ and send your thanks to Ramanujan.)
+\item \textit{(amended from earlier year's homework)} Suppose we are playing a lottery in which four different bins contain 10 ping-pong balls -- one for each digit -- and a lottery draw consists of a single ball being taken from each bin.
+\begin{enumerate}
+\item If the lottery requires matching exactly each of the four bins, how many outcomes are there?
+\item If the lottery requires matching the four balls (irrespective of their origin bin), how many outcomes are there?
+\end{enumerate}
+Suppose instead that all of the 40 balls are in a single bin.
+\begin{enumerate}
+\item If the lottery requires matching exactly the sequence of four draws, how many outcomes are there?
+\item If the lottery requires matching the four balls (irrespective of their sequence), how many outcomes are there?
+\end{enumerate}
+\end{enumerate}
+
 \section{Pass the Pigs}
 
 Pass the pigs is a silly dice-like game now produced by Xingcolo, once produced by Milton Bradley:
@@ -19,7 +36,7 @@ Players take turns rolling a pair of dice-sized rubber pigs. Depending on how th
 
 Like a dice, there are six possible outcomes of a roll of a single pig; unlike a dice, the probability of each occurring is not equal.
 
-It's not clear \textit{ex ante} what the exact probability of each outcome actually is; luckily some time-rich fellow named Freddie W. paid some students to conduct an experiment consisting of 3,939 rolls of the pigs, which gives a sort of empirical distribution of the outcomes, show in Table \ref{tbl:pigout}:
+It's not clear \textit{ex ante} what the exact probability of each outcome actually is; luckily some time-rich fellow named Freddie W. paid some students to conduct an experiment consisting of 3,939 rolls of the pigs (see http://passpigs.tripod.com/prob.html), which gives a sort of empirical distribution of the outcomes, show in Table \ref{tbl:pigout}:
 
 \begin{table}[htbp]
 \centering
@@ -61,6 +78,7 @@ Let's say there are 200,000 terrorists in the world, 30,000 of whom are in Syria
 \item Given these rough estimates, what is the probability that a randomly selected person in the world is a terrorist?
 \item Given that someone is a terrorist, what is the probability that they are Syrian?
 \item You're screening refugees and hoping to weed out any terrorist posing as a refugee. Given that you know the refugee is Syrian, what is the probability they are a terrorist? That is, what is $\mathbb{P}[terrorist|Syrian]$?
+\item By what order of magnitude does knowing a person is Syrian increase the likelihood that they're a terrorist?
 \item \textit{(open-ended/framing thoughts moving forward)} This is of course a simplistic interpretation of the problem of refugee screening. Why does the simplistic analysis break down? What are other important considerations? What assumptions are violated?
 \end{enumerate}
 

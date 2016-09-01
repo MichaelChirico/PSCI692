@@ -1,3 +1,10 @@
 .Rhistory
 
 *.pdf
+
+#LaTeX-associated files which don't need to be tracked
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
