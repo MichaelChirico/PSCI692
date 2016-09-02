@@ -8,3 +8,6 @@
 *.fls
 *.log
 *.synctex.gz
+
+#don't need to track course page here
+*.html
