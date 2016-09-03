@@ -1,5 +1,6 @@
 \documentclass{article}
 
+\usepackage[T1]{fontenc} %for producing vertical pipe: |
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -34,7 +35,7 @@ See Figure \ref{fig:dice}. Red regions have differences between rolls of 2 or le
 \centering
 \caption{Joint Distribution of Two Dice Rolls}
 \label{fig:dice}
-\includegraphics[width = .5\textwidth]{recitation160901_fig1.png}
+\includegraphics[width = .5\textwidth]{recitation160901_fig1}
 \end{figure}
 \end{solution}
 
@@ -116,7 +117,27 @@ polygon(c(xs, rev(xs)),
 \begin{solution}
 This is equivalent to drawing four balls \textit{with replacement}, where order doesn't matter. Thus the answer is $\dbinom{10 + 4 - 1}{4} = \dbinom{13}4$.
 
-We can calculate this with R!
+The stars-and-bars approach is probably easiest. We are picking 4 balls (four stars, *), and we can think of placing them in one of 10 bins, one for each digit, each separated by a wall, |. Any extraction of four balls can be represented by an arrangement of 13 symbols -- 9 walls and 4 balls. For example, the selection 0, 0, 5, 7 can be seen pictorially as:
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+[ & * & * & | & | & | & | & | & * & | & | & * & | & | & ]
+\end{tabular}
+\end{center}
+
+I'm using square brackets on the end so it's clear there's a bin there, but note that these walls are fixed and in the same position for every arrangement, so we don't have to draw them. 1, 2, 3, 4 would be:
+
+\begin{center}
+\begin{tabular}{ccccccccccccccc}
+[ & | & * & | & * & | & * & | & * & | & | & | & | & | & ]
+\end{tabular}
+\end{center}
+
+And so on. Every such picture represents exactly one lottery drawing, and every lottery drawing can be represented by exactly one picture. 
+
+It turns out it's much easier to count the number of possible pictures -- in fact it's quite simple! We're simply \textit{choosing} 4 positions in which to insert asterisks (the rest will be pipes), from a total of 13 positions. Thus $\dbinom{13}4$. Another way to see it is that there are 13 symbols, which would have $13!$ total re-arrangements, but since the asterisks are indistinguishable from one another (\textit{idem} pipes), we have to divide out the rearrangements of each -- $9!$ rearrangements of the pipes, $4!$ rearrangements of the asterisks, i.e., $\frac{13!}{9!\cdot 4!} = \dbinom{13}4$.
+
+And if we forget this thought process/get stuck making the analogy work, we can always just calculate this with R!
 
 \begin{lstlisting}
 #read the following code from bottom to top!
