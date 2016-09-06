@@ -1,0 +1,228 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{listings}
+\lstset{language=R,
+		backgroundcolor=\color{black}\ttfamily,
+        basicstyle=\color{white}\ttfamily,
+        keywordstyle=\color{orange}\ttfamily,
+        stringstyle=\color{green}\ttfamily,
+        commentstyle=\color{purple}\ttfamily,
+        showstringspaces=false
+}
+\usepackage{xcolor} %needed by listings
+
+\begin{document}
+
+\title{Problem Set 1: Supplementary Thoughts}
+\author{Michael Chirico}
+
+\maketitle
+
+\section*{1 (f)}
+
+Perhaps a graph can help illustrate this problem:
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width = .5\linewidth]{ps1_fig01}
+		\caption{Plain Tree}
+	\end{subfigure}
+
+	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width = .5\linewidth]{ps1_fig02}
+		\caption{Tree with Valid Paths}
+	\end{subfigure}
+
+	\caption{Tree Representation of Tournament}
+	\label{fig:tree}
+\end{figure}
+
+To get the probability of a valid path, multiply all the probabilities of each branch along it. The total probability is the sum of valid path probabilities.
+
+\section*{2 (a)}
+
+It's technically correct and perhaps easier to default to using 7-game series and simply count the number of combinations where Penn wins \textit{at least} four games, but you must make the connection to why this approach is valid.
+
+Anyway, to show the power of R, here's code to generate all the combinations and find the exact probability:
+
+\begin{lstlisting}
+library(data.table)
+TF <- c(TRUE, FALSE)
+DF <-
+  as.matrix(expand.grid(TF, TF, TF, TF, TF, TF, TF))
+series <- 
+  unique(as.data.table(t(apply(DF, 1L, function(x) {
+    wins <- cumsum(x)
+    last.game <- which(wins == 4)
+    if (length(last.game)) {
+      last.game <- last.game[1L]
+      if (last.game < 7) x[(last.game + 1):7] <- NA
+    }
+    loss <- cumsum(!x)
+    last.game <- which(loss == 4)
+    if (length(last.game)) {
+      last.game <- last.game[1L]
+      if (last.game < 7) x[(last.game + 1):7] <- NA
+    }
+    x}))))
+series[ , wins := rowSums(.SD, na.rm = TRUE)]
+series[ , games := 7L - rowSums(is.na(.SD))]
+series[ , prob := (.55)^wins * (.45)^(games - wins)]
+series[wins == 4, sum(prob)]
+\end{lstlisting}  
+
+It's much simpler in code to over-count:
+
+\begin{lstlisting}
+sum(sapply(4:7, choose, n = 7) * .65^(4:7) * .35^(3:0))
+\end{lstlisting}
+
+We could have also gotten an approximation by simulation:
+
+\begin{lstlisting}
+mean(replicate(1e6, sum(runif(7) <= .55) >= 4))
+\end{lstlisting}
+
+This runs on my machine in about 3 seconds and took about 30 seconds of coding, and gets the answer to 4 decimal places! Hurrah for simulation.
+
+\section{2 (c)} 
+
+Here's barebones R code:
+
+\begin{lstlisting}
+# values for x-axis
+p.seq <- seq(0, 1, length.out = 1000L)
+
+p.win <- function(p) 
+  sum(sapply(4:7, choose, n = 7) *
+        p^(4:7) * (1-p)^(3:0))
+
+#approach 1: plot + lines
+png("ps1_fig03.png")
+plot(p.seq, p.seq^4, type = "l")
+lines(p.seq, sapply(p.seq, p.win))
+dev.off()
+\end{lstlisting}
+
+Producing this minimalist plot:
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width = .5\linewidth]{ps1_fig03}
+\caption{Minimal Plot for 2(c)}
+\label{fig:prob}
+\end{figure}
+
+Bells and whistles bring this to being publication quality:
+
+\begin{lstlisting}
+png("ps1_fig04.png")
+plot(p.seq, p.seq^4, type = "l",
+     main = 
+       paste0("Tournament Winning Probability by\n",
+              "Underlying Advantage & ", 
+              "Tourney Structure"),
+     xlab = "Single Game Win Probability",
+     ylab = "Tournament Win Probability",
+     #penn official colors!
+     las = 1L, asp = 1L, col = "#A90533", lwd = 3L)
+lines(p.seq, sapply(p.seq, p.win), lwd = 3L,
+      col = "#004785")
+legend("topleft", 
+       legend = c("Best-of-7", "Single-Elimination"),
+       col = c("#004785", "#A90533"), lwd = 3L)
+dev.off()
+\end{lstlisting}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width = .5\linewidth]{ps1_fig04}
+\caption{Minimal Plot for 2(c)}
+\label{fig:prob_bells}
+\end{figure}
+
+Many other ways to do this, here are two:
+
+\begin{lstlisting}
+#approach 2: matplot
+png("ps1_fig05.png")
+matplot(p.seq, cbind(sapply(p.seq, p.win), p.seq^4),
+        type = "l", col = c("#004785", "#A90533"),
+        lty = 1L, lwd = 3L, asp = 1L, las = 1L,
+        xlab = "Single Game Win Probability",
+        ylab = "Tournament Win Probability",
+        main = 
+          paste0("Tournament Winning Probability by\n",
+                 "Underlying Advantage & ", 
+                 "Tourney Structure"))
+legend("topleft", 
+       legend = c("Best-of-7", "Single-Elimination"),
+       col = c("#004785", "#A90533"), lwd = 3L)
+dev.off()
+
+#approach 3: ggplot
+#  warning: I don't really know anything about ggplot2.
+#  But it's the plotting device of choice for many
+#  data folks, including over at fivethirtyeight
+library(ggplot2)
+png("ps1_fig06.png")
+ggplot() + 
+  geom_point(aes(p.seq, p.seq^4), color = "#A90533") + 
+  geom_point(aes(p.seq, sapply(p.seq, p.win)), 
+             color = "#004785") + 
+  coord_fixed() + 
+  xlab("Single Game Win Probability") + 
+  ylab("Tournament Win Probability") + 
+  ggtitle(paste0(
+    "Tournament Winning Probability by\n",
+    "Underlying Advantage & Tourney Structure"
+  ))
+dev.off()
+\end{lstlisting}
+
+\section*{4} 
+
+Especially useful to draw trees for problems like this.
+
+Here is the main tree for all but part (d):
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width = .5\linewidth]{ps1_fig07}
+\caption{Minimal Plot for 2(c)}
+\label{fig:zika}
+\end{figure}
+
+In part (d), we would extend this by one more level.
+
+As always, we can just simulate answers in R to know if we're on the right track:
+
+\begin{lstlisting}
+population <- data.table(indiv = runif(1e6))
+
+population[ , zika := indiv > .98]
+
+#test results depend on zika status
+population[(zika), paste0("test", 1:2) :=
+             .(runif(.N) > .05, runif(.N) > .05)]
+
+population[(!zika), paste0("test", 1:2) :=
+             .(runif(.N) > .97, runif(.N) > .97)]
+
+#part a)
+population[ , mean(test1)]
+
+#part b)
+population[(test1), mean(zika)]
+
+#part c)
+population[(!test1), mean(zika)]
+
+#part d)
+population[test1 & test2, mean(zika)]
+\end{lstlisting}
+
+\end{document}
