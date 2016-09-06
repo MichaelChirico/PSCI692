@@ -5,3 +5,7 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 ## Worksheets
 
 * [In-Class Worksheet: September 1, 2016](recitation160901.pdf) [[solutions](recitation160901_sol.pdf)]
+
+## Problem Sets
+
+* [Supplement to Solutions, PS1](ps1_sol_supp.pdf)
