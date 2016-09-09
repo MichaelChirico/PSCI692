@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bbm}
+
+\begin{document}
+
+\title{Recitation 1}
+\author{Michael Chirico}
+
+\maketitle
+
+\section{Return of the Pigs}
+
+Recall Pass the Pigs from last week. Note the new column denoting point values for each roll.
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|r|c|c|c|}
+\hline
+Roll Type & Number of Rolls & Proportion & Point Value \\
+\hline
+Blank & 1,344 & .341 & 0 \\
+\hline
+Dot & 1,294 & .329 & 1 \\
+\hline
+Razorback & 767 & .195 & 5 \\
+\hline
+Trotter & 365 & .092 & 5 \\
+\hline
+Snouter & 137 & .035 & 5 \\
+\hline
+Leaning Jowler & 32 & .008 & 10 \\
+\hline
+\end{tabular}
+\caption{Empirical Likelihood of Pig Roll Types}
+\label{tbl:pigout}
+\end{table}
+
+What is the expected value of a roll in this game? Variance?
+
+\section{Backgammon}
+
+In backgammon, your turn starts with a roll of two dice. You are able to move your chips as many spaces as the sum of the two faces, with one backgammon-specific twist. Doubles count double. So, for example, rolling 4-4 means you can move $4+4+4+4=16$ total spaces, but a roll of 1-6 means that you can move $6+1=7$ spaces.
+
+\begin{enumerate}
+\item What is the expected number of spaces you can move on a single turn in Backgammon?
+\item A backgammon board is 24 spaces long. How many turns do you expect it to take to make a full run for two chips?
+\end{enumerate}
+
+\section{Linear Combinations}
+
+Consider the discrete RVs $X$ and $Y$ with PMFs:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{r|ccc}
+$x$ & $-1$ & $0$ & $1$ \\
+\hline
+$\mathbb{P}[X = x]$ & $.05$ & $.4$ & $.55$ \\
+\end{tabular}
+\caption{PMF of $X$}
+\label{tbl:x_dist}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{r|ccccc}
+$y$ & $2$ & $3$ & $5$ & $7$ & $11$ \\
+\hline
+$\mathbb{P}[Y = y]$ & $.1$ & $.1$ & $.1$ & $.1$ & $.6$ \\
+\end{tabular}
+\caption{PMF of $X$}
+\label{tbl:y_dist}
+\end{table}
+
+\begin{enumerate}
+\item Describe the distributions of $X$ and $Y$ at a glance.
+\item Draw the CDFs of $X$ and $Y$.
+\item What is $\mathbb{E}[X]$?
+\item What is $\mathbb{E}[X^2]$?
+\item What is $\mathbb{V}[Y]$?
+\item What is $\mathbb{E}[X^2 - \frac12 Y]$?
+\item What is $\mathbb{E}[Z \mid Z > 5]$, where $Z = X + |Y - 5|$
+\end{enumerate}
+
+\section{Continuous Distribution}
+
+Suppose that the random variable $X$ has pdf
+
+\[ p(x) = \frac12 (x - 1) \mathbbm{1}[1 < x < 3] \]
+
+(the $\mathbbm{1}[1 < x < 3]$ part is just a convenient way of expressing that the domain of this RV is $[1, 3]$ in-line instead of needing to define it piecewise)
+
+\begin{enumerate}
+\item Find a monotone function $u(x)$ such that the random variable $Y = u(x)$ is distributed $U[0,1]$.
+\item Think of how you'd write a computer program to generate draws from the random variable $X$. \textit{Hint: you can start from $U[0, 1]$ draws and then convert them into draws of $X$.} 
+\end{enumerate}
+
+\end{document}
