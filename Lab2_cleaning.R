@@ -161,4 +161,10 @@ fktr_def[ ,
             NULL},
           by = var]
 
+### fwrite is a brand new function only available in the
+###   development version of data.table. The base alternative
+###   will run much slower and is called write.csv.
+###   Installation instructions for the development version
+###   can be found here:
+###   https://github.com/Rdatatable/data.table/wiki/Installation
 fwrite(cps_data, "March2010.csv", quote = TRUE)
