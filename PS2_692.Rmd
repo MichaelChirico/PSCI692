@@ -1,0 +1,152 @@
+---
+title: "PS2 Through R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+## Problem 1
+
+We can just do this directly, or we can make a function to make our code more concise. Done directly:
+
+```{r 1_nofunc}
+#Part (d)
+sum(exp(-4) * 4^(0:3)/factorial(0:3))
+
+#Part (e)
+sum(exp(-4) * 4^(11:12)/factorial(11:12))
+
+#Part (f)
+1 - sum(exp(-4) * 4^(0:5)/factorial(0:5))
+```
+
+If we wanted to do this, we might quickly tire of copy-pasting and/or writing out all of that code over and over. That's why functions were invented:
+
+```{r 1_func}
+#First, define a function
+prob_days <- function(x) sum(exp(-4) * 4 ^ x / factorial(x))
+
+#Now, the other parts become much more concise and readable:
+prob_days(0:3)
+prob_days(11:12)
+1 - prob_days(0:5)
+```
+
+We could also have defined our function more generally (wherever 4 appears in the formula, it could be replaced by any positive number). Actually, this PMF is called the Poisson PMF, and since it's so common, R has two built-in function for it called `dpois` (giving the "density", i.e., the value of the PMF) and `ppois` giving the CDF. We could have used this like so:
+
+```{r 1_pois}
+ppois(3, lambda = 4)
+sum(dpois(11:12, lambda = 4))
+1 - ppois(5, lambda = 4)
+```
+
+## Problem 2
+
+As above, we can either define a function or just do all the computations directly. First, without a special function:
+
+```{r 2_nofunc}
+#(c) (i)
+sum(0:4 * choose(4, 0:4) * .55^(0:4) * (1-.55)^(4:0))
+
+#(c) (ii)
+choose(4, 0) * (.55)^0 * (1-.55)^4
+
+#(c) (iii)
+sum(choose(4, 3:4) * .55^(3:4) * (1-.55)^(4 - 3:4))
+
+#(c) (iv)
+20 * sum(choose(4, 0:2) * .55^(0:2) * (1-.55)^(4 - 0:2)) - 
+  15 * sum(choose(4, 3:4) * .55^(3:4) * (1-.55)^(4 - 3:4))
+
+#(c) (v)
+100 * sum(choose(4, 3:4) * .55^(3:4) * (1-.55)^(4 - 3:4)) + 
+  50 * choose(4, 2) * .55^(2) * (1-.55)^(4 - 2) - 
+  200 * sum(choose(4, 0:1) * .55^(0:1) * (1-.55)^(4 - 0:1))
+```
+
+With a function:
+
+```{r 2_func}
+repub_prob <- function(x) choose(4, x) * .55 ^ x * (1 - .55) ^ (4 - x)
+
+sum(0:4 * repub_prob(0:4))
+repub_prob(0)
+sum(repub_prob(3:4))
+sum(c(20, 20, 20, -15, -15) * repub_prob(0:4))
+sum(c(-200, -200, 50, 100, 100) * repub_prob(0:4))
+```
+
+And once again, this PMF is common enough to warrant R having a set of built-in functions for interacting with it: importantly, `dbinom` and `pbinom` for the density (PMF) and probability (CDF), respectively. We can also, since we're dealing with a discrete distribution, just calculate the entire distribution, store it in a vector, and extract the parts we need for each question:
+
+```{r 2_binom}
+repub.pmf = dbinom(0:4, size = 4, prob = .55)
+sum(0:4 * repub.pmf)
+repub.pmf[1L]
+sum(repub.pmf[4:5])
+sum(c(20, 20, 20, -15, -15) * repub.pmf)
+sum(c(-200, -200, 50, 100, 100) * repub.pmf)
+```
+
+## Problem 4
+
+All limits can typically be guessed by plotting. For which R is perfect!
+
+```{r 4_plots}
+# two-sided limit, so take points on both sides
+x <- seq(-6, -2, length.out = 1000L)
+
+plot(x, (x^2 + 5*x + 4)/(x^2 + 3*x - 4),
+     type = "l", lwd = 3L, xlab = "x",
+     ylab = expression(f(x)), main = "4 (a)")
+abline(v = -4, lty = 2, lwd = 2, col = "red")
+
+# one-sided limit, so only take points from one side
+x <- seq(2, 4, length.out = 1000L)
+plot(x, sqrt(16 - x^2),
+     type = "l", lwd = 3L, xlab = "x", 
+     ylab = expression(f(x)), main = "4 (b)")
+abline(v = 4, lty = 2, lwd = 2, col = "red")
+
+# two-sided limit, so take points on both sides
+x <- seq(-3, 1, length.out = 1000L)
+
+plot(x, (x - 2)/(x^2 + 4*x - 3),
+     type = "l", lwd = 3L, xlab = "x", 
+     ylab = expression(f(x)), main = "4 (c)")
+abline(v = -1, lty = 2, lwd = 2, col = "red")
+
+# two-sided limit, so take points on both sides
+x <- seq(-6, -2, length.out = 1000L)
+
+plot(x, (1/4 + 1/x)/(4 + x),
+     type = "l", lwd = 3L, xlab = "x",
+     ylab = expression(f(x)), main = "4 (d)")
+abline(v = -4, lty = 2, lwd = 2, col = "red")
+```
+
+## Problem 5
+
+R has the ability to differentiate simple functions for you as well (admittedly, it's pretty rudimentary), using the `D` function -- see `?D`.
+
+```{r 5_deriv}
+D(expression(4*x^3 + 2*x^2 + 5*x + 11), "x")
+D(expression(sqrt(30)), "x")
+D(expression(2^3 + (sin(x))^3), "x")
+D(expression(log(9*t + 1)), "t")
+D(expression(x^3 * cos(11*x)), "x")
+D(expression(log(x^2 * exp(x))), "x")
+D(expression((1/y^2 - 3/y^4) * (y + 5*y^3)), "y")
+D(expression(3*t - 1/2 * t + 1), "t")
+```
+
+## Problem 6
+
+R can integrate as well! See `?integrate`.
+
+```{r 6_integral}
+integrate(function(x) x^(3/7), 0, 1)
+integrate(function(x) 3/x^4 + 2, 1, 2)
+integrate(function(x) 2^x, 8, 9)
+integrate(function(x) sqrt(x^5 + 2), 3, 3)
+```

@@ -8,6 +8,8 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 
 * [In-Class Worksheet: September 8, 2016](recitation160908.pdf) [[solutions](recitation160908_sol.pdf)]
 
+* [In-Class Worksheet: September 15, 2016](recitation160915.pdf)
+
 ## Problem Sets
 
 * [Supplement to Solutions, PS1](ps1_sol_supp.pdf)
