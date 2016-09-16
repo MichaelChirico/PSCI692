@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{xcolor}
+\newenvironment{solution}{\color{red}}{\color{black}}
+
+\begin{document}
+
+\title{Recitation 3}
+\author{Michael Chirico}
+
+\maketitle
+
+\section*{Crop Insurance}
+
+You're a cotton farmer. Like any farmer, you face a multitude of risks; today we'll focus on just one -- boll weevils.
+
+We're going to figure out how much you are willing to pay for boll weevil insurance.
+
+To understand this, first we'll quantify the risks you face, and how you value your money.
+
+There are two possibile outcomes of your harvest worth considering; the first is the ideal world in which you escape the scourge of the boll weevil. If you don't get a boll weevil infestation, your plot will yield \$10,000 worth of cotton to be sold at market (with certainty).
+
+On the other hand, there's the possibility that you'll catch a rough break and the boll weevils will gorge themselves on your delicious insect cotton candy. In this case, the devilish little fiends will devour 84\% of the value of your cotton crop -- leaving only \$1600 worth of white gold to be sold to textile manufacturers.
+
+There are two more crucial pieces of the puzzle -- the degree of risk, and your own preferences for money.
+
+The boll weevil is still relatively unheard of, and your diligence over your fields means that you only face a 5\% chance of being infested by boll weevils.
+
+Lastly, your preferences for wealth $w$ are described by $U(w) = \sqrt{w}$. The crucial thing about this is that this function is concave (its second derivative is negative -- check this for yourself after class), which means that each additional dollar brings you less additional happiness than did the previous dollar.
+
+\begin{enumerate}
+\item Let's explore our preferences quickly. How much would we value income of \$1,000, \$2,000, and \$3,000?
+\item How much ``happier'' do we get (i.e., what is the change in utility) going from \$1,000 of income to \$2,000? From \$2,000 to \$3,000?
+\item How much money do we expect to lose to the boll weevil? \textit{Hint: This is just the expected loss due to boll weevils conditional on them attacking, multiplied by the likelihood of this happening}
+\item Let's figure out our expected ``happiness'' (utility) in the case when we don't buy insurance. If we don't buy insurance, there are two possible outcomes. What are they? How likely is each?
+\item What is the value to us of each of these outcomes?
+\item What is the expected value to us of not buying insurance?
+\item The insurance contract under consideration says that, in the case that we are beset by boll weevils, the insurance company will pay to cover every cent of damage caused by the insect. In exchange for this promise, we pay the insurer \$$p$ ($p$ is called the \textit{insurance premium}). Knowing this, what will be our net income in the two states of the world described above, as a function of $p$?
+\item Are we willing to pay \$400 for the insurance policy?
+\item What is the maximum we're willing to pay for the policy?
+\item How does this compare to the expected loss due to the boll weevil that we calculated above?
+\item Why does this relationship between the expected loss and the maximum premium hold?
+\end{enumerate}
+
+\begin{solution}
+\begin{enumerate}
+\item $\sqrt{1000}$, $\sqrt{2000}$, and $\sqrt{3000}$, respectively.
+\item $\sqrt{2000} - \sqrt{1000} \approx 13$ and $\sqrt{3000} - \sqrt{2000} \approx 10$, respectively. Note that this value decreases -- i.e., our preferences towards wealth exhibit \textbf{decreasing marginal utility}.
+\item We expect to lose \$8,400 just 5\% of the time, or $.05\cdot 8400 = 420$ on average.
+\item We either get infested by boll weevils, or we don't; the former happens 5\% of the time, the latter happens 95\% of the time.
+\item Getting infested by boll weevils, we are left with only \$1,600 of income, which we value at $\sqrt{1600} = 40$. If we're not infested, we have \$10,000 of income, which we value at $\sqrt{10000} = 100$.
+\item 95\% of the time we get utility 100; the other 5\% of the time, we get 40. So on average, we get $.95(100) + .05(40) = 97$.
+\item In both states of the world, our net income is $10000 - p$ -- either we pay the \$$p$ and aren't hit by the boll weevil, or we pay the \$$p$ and \textit{are} hit by the boll weevil -- in which case, we lose \$8,400, but are paid back all \$8,400 by the insurance company.
+\item If we pay \$400 for the policy, we're left with \$9,600 in all states of the world, which we value at $\sqrt{9600} \approx 98$. This exceeds our uninsured expected utility of 97, so we are happy to pay this premium.
+\item The breaking point happens when the expected utility of buying insurance is equal to that of not buying, i.e, when
+
+\[ \sqrt{10000 - p} = 97 \]
+
+Solving, we see $p = 591$.
+\item This is higher than the expected loss -- by \$171, in fact.
+\item Because of risk aversion -- we prefer the certainty of paying a relatively large amount to the uncertainty of possibly having most of our wealth destroyed. The marginal contribution of the last \$591 of our income aren't that much, in a sense, compared to the catastrophic destruction of happiness that's possible under the boll weevil invasion.
+\end{enumerate}
+\end{solution}
+
+\end{document}
