@@ -13,3 +13,5 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 ## Problem Sets
 
 * [Supplement to Solutions, PS1](ps1_sol_supp.pdf)
+
+* [Supplement to Solutions, PS2](PS2_692)
