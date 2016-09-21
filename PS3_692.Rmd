@@ -1,0 +1,71 @@
+---
+title: "PS2 Through R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+## Problem 1
+
+### Alternative solution to part a)
+
+Define the random variable $D = L - v$. Note that $\mu_D = \mu_L - v$ and $\sigma^2_D = \sigma^2_L$, by the basic properties of expectations and variance w.r.t. linear transformations. Also, by rearranging the shortcut formula for the variance of a random variable, $\mathbb{E}[D^2] = \sigma^2_D + \mu^2_D$
+
+Then
+
+\[ \mathbb{E}\left[-\left( L - v \right)^2 \right] = -\mathbb{E}[D^2] = -\left( \sigma^2_L + \left( \mu_L - v \right)^2 \right) \]
+
+## Problem 2
+
+### Parts d) - h) through simulation
+
+We can generate draws from any random variable by inverting its CDF and inserting $U[0, 1]$ draws. In this case, the CDF of $X$ is $F(x) = \frac{x^4}{625}$, so $F^{-1}(u) = 5 \sqrt[4]{u}$:
+
+```{r gen_draws}
+# Generate a bunch of uniform random draws
+uu = runif(1e6)
+
+# Pass through F^{-1} to get draws of X:
+xx = 5 * uu^.25
+
+# Plot to demonstrate
+par(las = 1L) #can't pass this to hist directly for some reason
+hist(xx, probability = TRUE,
+     xlab = expression(X),
+     main = paste0("Histogram of Inverted Draws\n",
+                   "vs. Known Density"))
+lines(xxx <- seq(0, 5, length.out = 1000L),
+      4/625 * xxx^3, lwd = 3L, col = "red")
+```
+
+Make sure you understand why the red line and the histogram come from completely different approaches, even though they line up perfectly! (as they should, if you know what's going on intuitively)
+
+Now that we have a bunch of draws from $X$, it's _super_ easy to simulate its expectation, variance and median:
+
+```{r sim_moments}
+#d)
+mean(xx)
+var(xx)
+#e)
+median(xx)
+#f)
+mean(xx == 3)
+#g)
+mean(2 <= xx & xx <= 4)
+#h)
+mean(xx < 1 | xx > 4)
+```
+
+## Problem 3
+
+### Part b)
+
+```{r poisson}
+#note that we have to use TWO on the
+#  lower end, NOT three -- since
+#  this is a discrete distribution,
+#  the mass accumulated at 3 is
+#  important.
+diff(ppois(c(2, 15), 9))
+```
