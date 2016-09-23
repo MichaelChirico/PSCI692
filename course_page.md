@@ -17,3 +17,9 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 * [Supplement to Solutions, PS2](PS2_692)
 
 * [Supplement to Solutions, PS3](PS3_692)
+
+* [Supplement to Solutions, PS4](PS4_692)
+
+## Data Lab Material
+
+* [IPUMS Intro Lab Instructions for R](Lab2R.text)

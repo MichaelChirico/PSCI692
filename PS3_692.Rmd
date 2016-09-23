@@ -1,5 +1,5 @@
 ---
-title: "PS2 Through R"
+title: "PS3 Through R"
 author: "Michael Chirico"
 date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
 output: 
@@ -68,4 +68,34 @@ mean(xx < 1 | xx > 4)
 #  the mass accumulated at 3 is
 #  important.
 diff(ppois(c(2, 15), 9))
+
+#alternatively, using the density directly:
+sum(dpois(3:15, 9))
 ```
+
+### Part c)
+
+The full distribution is in general _much_ more informative than just knowing two moments. As an illustration, here are a bunch of distributions that have the _same_ mean and variance as mentioned in part a). This is by no means exhaustive:
+
+```{r mean_var_same}
+xx = seq(0, 18, length.out = 1000L)
+#can only plot integers for discrete distributions
+xx.int = 0L:18L
+plot(xx.int, dpois(xx.int, lambda = 9), type = "b", xlab = "",
+     lwd = 3L, las = 1L, ylab = "probability/density", ylim = c(0, .3),
+     main = "Some Distributions with Mean & Variance 9")
+lines(xx, dnorm(xx, mean = 9, sd = 3), col = "red")
+lines(xx, dgamma(xx, shape = 9, scale = 1), col = "blue")
+lines(xx, dlnorm(xx, meanlog = .5*log(729/10),
+                 sdlog = sqrt(log(10/9))), col = "darkgreen")
+lines(xx, dlogis(xx, location = 9, scale = sqrt(27)/pi), col = "orange")
+lines(xx, .3*dnorm(xx, mean = 2, sd = sqrt(900/58)) + 
+        .7*dnorm(xx, mean = 84/7, sd = sqrt(900/58)), col = "purple")
+lines(xx + 9 - 5.5087/3.5087, df(xx, df1 = 2, df2 = 5.5087), col = "cyan")
+legend("topright", lty = 1L, lwd = c(3L, rep(1L, 6L)),
+       legend = c("Poisson", "Normal", "Gamma", "Log-Normal",
+                  "Logistic", "Bi-Modal Normal", "F"),
+       col = c("black", "red", "blue", "darkgreen",
+               "orange", "purple", "cyan"))
+```
+
