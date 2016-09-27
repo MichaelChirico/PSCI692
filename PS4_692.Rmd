@@ -91,8 +91,9 @@ Doing the simulation for an unknown joint CDF is a bit tough. So we're instead g
 ```{r cdf_discr}
 pdf = CJ(y1 = seq(0, 1, length.out = 1000L),
          y2 = seq(0, 1, length.out = 1000L)
-         #have to normalize by the number of points
-         )[ , p := 4 * y1 * y2 / .N]
+         )[ , p := 4 * y1 * y2
+            #have to normalize since we discretized
+            ][ , p := p/sum(p)]
 
 #sanity check
 pdf[ , sum(p)]
@@ -115,4 +116,41 @@ pdf[ , .(p_2 = sum(p)), by = y2]
 
 ```{r var}
 pdf[ , .SD[sample(.I, 1e6, prob = p, replace = TRUE), var(y1 - y2)]]
+```
+
+## Problem 4
+
+### Part a)
+
+```{r solve_constant}
+k = 1/integrate(function(y) y^3, 0, 6)$value/
+  integrate(function(x) x^2, 0, 6)$value
+k
+```
+
+### Part b)-c)
+
+We can't get an expression for the marginal PDF of $X$, but we can plot it like so:
+
+```{r x-y_marginal}
+x = seq(0, 6, length.out = 1000L)
+plot(x, sapply(x, function(xx)
+  integrate(function(y) k * xx^2 * y^3, 0, 6)$value),
+  main = "Marginal PDF of X", ylab = "Density", 
+  type = "l", lwd = 3L, col = "red", las = 1L)
+
+y = seq(0, 6, length.out = 1000L)
+plot(y, sapply(y, function(yy)
+  integrate(function(x) k * x^2 * yy^3, 0, 6)$value),
+  main = "Marginal PDF of Y", ylab = "Density",
+  type = "l", lwd = 3L, col = "blue", las = 1L)
+```
+
+### Parts d)-f)
+
+```{r varx-vary-covxy}
+pdf = CJ(x = x, y = y)[ , p := k * x^2 * y^3
+                        ][ , p := p/sum(p)]
+pdf[ , .SD[sample(.I, 1e6, prob = p, replace = TRUE), 
+           .(`(d)` = var(x), `(e)` = var(y), `(f)` = cov(x, y))]]
 ```

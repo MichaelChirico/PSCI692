@@ -1,0 +1,284 @@
+---
+title: "Exploring IPUMS Data in R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+## Reading the data
+
+```{r import, eval = FALSE}
+library(data.table)
+#Set the path to wherever the data is stored on your own machine;
+#  for me, it's in my downloads folder
+IPUMS = fread("~/Downloads/March2010.csv")
+```
+
+```{r import_eval, echo = FALSE, results = "hide"}
+options(width = 85)
+library(data.table)
+IPUMS = suppressWarnings(fread("~/Downloads/March2010.csv"))
+```
+
+
+## Some data exploration
+
+```{r explore}
+#First find out what the names within R of all of the columns are
+names(IPUMS)
+#Something like 60% of the variables are these weighting
+#  variables; more interesting to exclude them while previewing
+wt_vars = grep("^repwt", names(IPUMS), value = TRUE)
+#Still a massive amount of information to parse visually!
+IPUMS[ , !wt_vars, with = FALSE]
+
+#Focus on specific variables with head to see the first
+#  few observations (or tail for the last few)
+IPUMS[ , head(diffcare)]
+IPUMS[ , head(poverty)]
+## Combine with the .() idiom to explore a small number of variables
+IPUMS[ , .(head(whynwly), head(occ50ly), head(labforce))]
+## More advanced -- lapply(.SD, function) & .SDcols
+##   - within [], .SD represents the data itself.
+##   - the added .SDcols argument subsets the data and tells which
+##     columns to put into .SD (the *S*ubset of the *D*ata)
+##   - lapply is an iterative function -- it applies the function
+##     in its second argument to every "element" of its first argument;
+##     in this case, the function is head, and "element"s of 
+##     .SD, which is a data.table, are _columns_ -- so 
+##     lapply(.SD, head) says "apply head to every column of .SD"
+##   This approach is can be very useful when specifying columns to
+##   subset _by a pattern_, for example.
+IPUMS[ , lapply(.SD, head), .SDcols = c("educ", "yrimmig", "citizen")]
+
+#Summary for continuous variables
+IPUMS[ , summary(hhincome)]
+#fread failed to detect that inctot is numeric, because some
+#  households have their inctot stored as "999999";
+#  it's unclear immediately whether this is censored or
+#  erroneous data. Anyway, to get around this,
+#  we exclude such people and use as.numeric
+IPUMS[ , class(inctot)]
+IPUMS[inctot != "999999", summary(as.numeric(inctot))]
+
+#To explore discrete variables, use table
+IPUMS[ , table(foodstmp)]
+IPUMS[ , table(nativity)]
+## Also use table for two-way tables
+IPUMS[ , table(nativity, sex)]
+
+#Fixing variable types with := and as.
+## Age is currently considered a character
+##   because infants are "Under 1 year"
+IPUMS[ , table(age)]
+```
+
+```{r explore_contd, results = "hide"}
+## It's more of a pain to deal with character
+##   variables; so we tell R to store it as a number
+IPUMS[age == "Under 1 year", age := "0"]
+IPUMS[ , age := as.numeric(age)]
+## Also fix totinc from before
+IPUMS[ , inctot := as.numeric(inctot)]
+IPUMS[inctot == 999999, inctot := NA]
+```
+
+```{r explore_contd2}
+#Grouping and averages
+IPUMS[sex == "Male", mean(hhincome), by = age]
+## This output wasn't sorted by age because
+##   IPUMS isn't itself sorted by age. Because
+##   sorting can be time-consuming, especially on
+##   larger data sets, data.table avoids sorting
+##   unless we tell it to do so explicitly.
+##   One way to do that is to use keyby instead of by:
+IPUMS[sex == "Male", mean(hhincome), keyby = age]
+```
+
+## Exploration Through Plots
+
+```{r plots, results = "hide"}
+#Histograms for one-dimensional continuous distributions
+IPUMS[ , hist(hhincome,
+              xlab = "Household Income",
+              main = "Histogram of Household Income")]
+## Income is generally quite skewed. We usually take logs
+IPUMS[hhincome > 0,
+      hist(log(hhincome),
+           xlab = "(Log) HH Income",
+           ylab = "Histogram of (log) Household Income")]
+
+#Scatter plots for pairs of continuous distributions
+IPUMS[ , plot(hhincome, inctot,
+              xlab = "Household Income", ylab = "Total Income",
+              main = "Scatterplot of Individual vs. Household Income")]
+## Use coloring to distinguish points
+IPUMS[ , plot(hhincome, inctot, col = as.factor(nativity),
+              xlab = "Household Income", ylab = "Total Income",
+              main = paste0("Scatterplot of Individual vs. Household Income\n", 
+                            "Colored by Nativity Status"))]
+## Need a legend to actually tell what the colors mean
+IPUMS[ , legend("topleft", legend = unique(nativity),
+                #cex means *c*haracter *ex*pansion factor --
+                #  .7 means characters below the plot
+                #  will be 80% as large as they would be otherwise
+                cex = .7, pch = 1L, col = as.factor(unique(nativity)))]
+
+#Bar plots for visualizing group means of small # of groups
+IPUMS[ , mean(hhincome), by = nativity
+       #we can "chain" [] operations -- we take the result of
+       #  one [] operation, which gives the group means,
+       #  and apply the commands in the subsequent [] calls to
+       #  this resulting output
+       ][ , barplot(V1, names.arg = nativity, las = 1L,
+                    col = as.factor(nativity), cex.names = .5,
+                    main = "Average HH Income by Nativity Status")]
+
+#Box plots for visualizing _distributions_ by small # of groups
+## par() sets graphical *par*ameters. See ?par for the full
+##   list of possible settings. mar sets the *mar*gins of the
+##   plot, in the order Bottom, Left, Top, Right. Default
+##   values are 5.1, 4.1, 4.1, 2.1, so this here makes the
+##   left margin a bit bigger in order to fit in the names.
+par(mar = c(5.1, 6.1, 4.1, 2.1))
+boxplot(hhincome ~ nativity, data = IPUMS,
+        #specify that the income values (those on the _y_ axis)
+        #  should be logarithmically; paradoxically, this
+        #  ends up on the _x_ axis because we set horizontal = TRUE
+        horizontal = TRUE, log = "y", las = 1L,
+        col = IPUMS[ , as.factor(unique(nativity))],
+        main = "Distribution of HH Income by Nativity Status")
+## Reset margins for future plots
+par(mar = c(5.1, 4.1, 4.1, 2.1))
+
+#Line/point plots for visualizing group means by a sequenced/ordered variable
+## Use the .(x = y) idiom to set the name of the result of the
+##   operation that creates y to be x for the next part of the [][] chain
+##   (otherwise, by default, it would be typically be called V1);
+##   this isn't necessary, but it makes the code more readable and robust
+IPUMS[ , .(avg_income = mean(hhincome)), keyby = age
+       #type = "b" means to plot *b*oth a line and points
+       ][ , plot(age, avg_income, type = "b", las = 1L,
+                 lwd = 3L, col = "darkgreen",
+                 xlab = "Age", ylab = "$",
+                 main = "Average HH Income by Age")]
+```
+
+## Problem 6
+
+```{r marriage_def, results = "hide"}
+IPUMS[ , married := 
+         #Seems like the marital status is stored in the marst
+         #  variable; there's some ambiguity about what it means
+         #  to be "married"; I take it to mean any of the following
+         #  three statuses
+         marst %in% c("Married, spouse absent",
+                      "Married, spouse present",
+                      "Separated")]
+```
+
+```{r marriage}
+IPUMS[ , mean(married)]
+#To extend to the population outside of the survey, we need sample weights.
+#  We can either do this manually or using the weighted.mean function:
+IPUMS[ , weighted.mean(married, w = wtsupp)]
+IPUMS[ , sum(married * wtsupp) / sum(wtsupp)]
+
+## advanced note -- if we examine what exactly the weighted.mean function
+##   is doing, we'll quickly see it's doing _almost_ exactly what we did
+##   when we calculated the weighted mean by hand -- it's just a bit more
+##   robust about handling edge cases/missing data:
+stats:::weighted.mean.default
+```
+
+## Problem 7
+
+Status within the household is covered in [this](https://usa.ipums.org/usa/chapter5/chapter5.shtml) document from IPUMS. The relevant variable is `pernum`; `pernum == ` means that observation is the household head.
+
+```{r household_heads_marriage}
+IPUMS[pernum == 1, mean(married)]
+IPUMS[pernum == 1, sum(married * wtsupp) / sum(wtsupp)]
+```
+
+## Problem 8
+
+```{r calif, results = "hide"}
+IPUMS[ , california := statefip == "California"]
+```
+
+## Problem 9
+
+```{r calif_share}
+IPUMS[ , sum(california * wtsupp) / sum(wtsupp)]
+```
+
+## Problem 10
+
+```{r iincome, results = "hide"}
+#the numprec is the number of individuals in the household;
+#  famsize is the size of the family unit, so is weakly
+#  smaller than numprec
+IPUMS[ , iincome := hhincome / sqrt(numprec)]
+```
+
+## Problem 11
+
+```{r iincome_dist, results = "hide"}
+#Use {} within the second argument to [] to perform
+#  more than one command
+IPUMS[ , {
+  idens = density(iincome)
+  with(idens, plot(x, y, type = "l", las = 1L, 
+                   col = "red", lwd = 3L,
+                   xlab = "Income", ylab = "Density",
+                   main = "Distribution of Individual Income"))
+  hist(iincome, freq = FALSE, add = TRUE)}]
+
+#Looks better in logs
+## Have to condition on iincome > 0 to take logs
+IPUMS[iincome > 0, {
+  idens = density(log(iincome))
+  with(idens, plot(x, y, type = "l", las = 1L,
+                   col = "red", lwd = 3L,
+                   xlab = "(Log) Income", ylab = "Density",
+                   main = "Distribution of (Log) Individual Income"))
+  hist(log(iincome), freq = FALSE, add = TRUE)}]
+```
+
+## Problem 12
+
+This can be done with a `for` loop like so:
+
+```{r for_loop, eval = FALSE}
+setkey(IPUMS, statefip)
+for (state in IPUMS[ , unique(statefip)]) {
+  #png("filename.png") tells R to start putting the
+  #  output of plotting commands you enter into
+  #  the file named "filename.png"
+  png(paste0(state, ".png"))
+  IPUMS[state, hist(log(iincome), freq = FALSE, las = 1L, xlab = "(Log) $",
+                    main = paste0("Distribution of (Log) ", 
+                                  "Individual Income in ", state)]
+  #dev.off() turns off the device -- that is, it
+  #  saves the file with all the plotting commands
+  #  you've added since you called png()
+  dev.off()
+}
+```
+
+Instead, we can do it by grouping like so:
+
+```{r by_plot, eval = FALSE}
+setkey(IPUMS, statefip)
+IPUMS[iincome > 0, {
+  # .BY, within each by-group, takes the value of the
+  #   grouping variable corresponding to the current group
+  png(paste0(.BY$statefip, ".png"))
+  hist(log(iincome), freq = FALSE, las = 1L,
+       xlab = "(Log) $", 
+       main = paste0("Distribution of (Log) Individual Income in ",
+                     #for fun, randomize the color
+                     .BY$statefip), col = sample(colors(), 1L))
+  dev.off()}, by = statefip]
+```
