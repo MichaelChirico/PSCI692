@@ -10,6 +10,8 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 
 * [In-Class Worksheet: September 15, 2016](recitation160915.pdf) [[solutions](recitation160915_sol.pdf)]
 
+* [In-Class Worksheet: September 29, 2016](recitation160929.pdf)
+
 ## Problem Sets
 
 * [Supplement to Solutions, PS1](ps1_sol_supp.pdf)
@@ -19,6 +21,8 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 * [Supplement to Solutions, PS3](PS3_692)
 
 * [Supplement to Solutions, PS4](PS4_692)
+
+* [Supplement to Solutions, PS5](PS5_692)
 
 ## Data Lab Material
 

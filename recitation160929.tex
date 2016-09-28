@@ -1,0 +1,81 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\DeclareMathOperator*{\Max}{Max}
+\newcommand{\st}{\hbox{ s.t. }}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Recitation 5}
+\author{Michael Chirico}
+
+\maketitle
+
+\section*{Welfare Maximization}
+
+Suppose (throwing an entire course in graduate-level economics into a black box) that a society's preferences over schools, $S$, and parks, $P$, are given by the following \textit{welfare function}:
+
+\[ W(S, P) = \frac34 \ln S + \frac14 \ln P \]
+
+Suppose further that the government has \$100 million to allocate between these two uses of public funds.
+
+Each school costs \$25 million, and each park costs \$5 million.
+
+What is the welfare-maximizing allocation of schools and parks?
+
+The formal problem that we're solving is
+
+\[ \Max_{S, P} \left\{ W(S, P) \right\} \qquad \st 25S + 5P \leq 100; \qquad S, P \geq 0 \]
+
+We'll focus on the final part of solving this problem. First notice that, since welfare is increasing in both $S$ and $P$, the government will spend all \$100 million (in more common terms -- society is improved by any additional school or park, so there is no incentive not to spend all of the money).
+
+In math, this means that
+
+\[ 25S + 5P = 100 \]
+
+\textit{(Be sure you understand what this equation means!)} 
+
+With this, we can eliminate one of the two choice variables, say $P$, by replacing $P$ everywhere with $P = 20 - 5S$. Thus the problem simplifies to:
+
+\[ \Max_S \left\{ \frac34 \ln S + \frac14 \ln \left( 20 - 5S \right) \right\} \]
+
+We're trying to maximize the function $W(S) \equiv \frac34 \ln S + \frac14 \ln \left( 20 - 5S \right)$ with respect to $S$. What on earth does this function look like?
+
+Can plot with R or Wolfram Alpha, with output in Figure \ref{fig:welfare}:
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width = .5\linewidth]{recitation160929_fig1.png}
+\caption{Appearance of Welfare Function at Budget Line}
+\label{fig:welfare}
+\end{figure}
+
+Our goal is to identify analytically the exact place where this function is maximized -- visually, it's in the neighborhood of $S = 3$.
+
+\begin{enumerate}
+\item What is the analytic/calculus condition that describes the value of $S$ that achieves the maximum of this function?
+\item What is the derivative of $W$ with respect to $S$?
+\item What value of $S$ eliminates the derivative (i.e., for which $S$ is $W'(S) = 0$)?
+\item \textit{(Complete in your free time)} What is the second derivative of $W$ with respect to $S$, and what can we learn from it about the critical point discovered in part 3)? 
+\end{enumerate}
+
+\section*{Some Matrix Algebra}
+
+Express the following system of equations as a single matrix equation of the form $AX = B$:
+
+\begin{alignat*}{4}
+2x & {}+{} &  y & {}+{} & 2z & {}={} & 10 \\
+ x & {}+{} &  y & {}+{} &  z & {}={} &  6 \\
+ x & {}+{} & 3y & {}+{} & 2z & {}={} & 13
+\end{alignat*}
+
+The solution to the matrix equation $AX = B$ is given by $X = A^{-1}B$.
+
+\begin{enumerate}
+\item Find $A^{-1}$.
+\item Find $A^{-1}B$.
+\end{enumerate}
+
+\end{document} 
