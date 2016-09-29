@@ -1,0 +1,44 @@
+In this data lab, we'll use the GSS Cross-Sectional Survey to create a plot evincing the evolution of peoples' attitudes towards interracial marriage and segregation.
+
+Ex-Ante Thought Exercise
+
+ - What do you expect to be the result of this exercise? Do you expect people's attitudes regarding interracial marriage and segregation are correlated? Perfectly correlated? How much of a change has taken place? What do you think is the best way to present the data?
+
+Task Overview
+ (1) Preliminaries -- read in the data
+ (2) Create summary variables for both topics
+     (a) One summary variable describing segregation attitudes
+     (b) One summary variable describing interracial marriage attitudes
+ (3) Introduce the longitudinal aspect by finding year-by-year summaries of each variable in (2)
+ (4) Produce output -- here, a time series plot
+
+Task 1: Read in data
+
+ - data from GSS 1972-2010 Cross-Sectional Cumulative Data 
+ - could be downloaded from:
+   http://www3.norc.org/GSS+Website/Download/STATA+v8.0+Format/
+ - here, we're providing you directly with the .dta file (a Stata binary format)
+   - to load this in R, we'll need a new package -- haven
+   - run the following command in R
+       install.packages("haven")
+   - load the package with the following command
+       library(haven)
+   - The function we want is called read_dta
+       gss = read_dta("path/to/gss7210_r2.dta")
+     - Replace path/to with the directory on your computer where this data file is located
+
+Task 2: Neighborhood Segregation Variable
+
+ - Create a variable taking the value TRUE if the respondent does not believe that whites "have a right to neighborhood segregation" (and FALSE otherwise)
+
+Task 3: Interracial Marriage Variable
+
+ - Create a variable taking the value TRUE if the respondent does not favor a law against interracial marriage (and FALSE otherwise)
+
+Task 4: Yearly averages
+
+ - For both of the variables form Tasks 2 and 3, create a new variable that captures its yearly average. That is, create a variable that captures the proportion of respondents in each year who do not believe whites have a right to neighborhood segregation (and a second variable about interracial marriage)
+
+Task 5: Plotting
+
+ - Create a graph plotting the proportion of respondents who don't believe that "whites have a right to segegation" and who don't favor a law against interracial marriage, over time. Specifically, the x-axis should be the year and the y-axis should be a percentage. 
