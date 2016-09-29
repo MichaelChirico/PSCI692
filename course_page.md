@@ -10,7 +10,7 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 
 * [In-Class Worksheet: September 15, 2016](recitation160915.pdf) [[solutions](recitation160915_sol.pdf)]
 
-* [In-Class Worksheet: September 29, 2016](recitation160929.pdf)
+* [In-Class Worksheet: September 29, 2016](recitation160929.pdf) [[solutions](recitation160929_sol.pdf)]
 
 ## Problem Sets
 
