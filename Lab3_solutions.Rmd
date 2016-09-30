@@ -1,0 +1,121 @@
+---
+title: "Exploring General Social Survey Data in R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+## Task 1 : Preliminaries
+
+```{r loading}
+library(data.table)
+library(haven)
+
+rm(list = ls(all = TRUE))
+gc()
+
+#setDT() converts the result to a data.table --
+#  since read_dta is not part of the data.table
+#  package, it returns the data as a data.frame,
+#  which (in my opinion) is more of a pain to deal with
+gss = setDT(read_dta("~/Dropbox/3/gss7210_r2_small.dta"))
+```
+
+`read_dta` keeps the variable label from Stata under a thing called an attribute of each variable. So, for example, the variable `racdin`, which has a sort of cryptic name, is actually much easier to understand by examining:
+
+```{r labels}
+gss[ , attr(racdin, "label")]
+
+#to view all of the atribute labels in the data set, do:
+sapply(gss, attr, "label")
+```
+
+This is still a lot of information; to narrow things down, we'll use a regular expression, which you can think of as a more powerful version of Googling. We're looking for something about segregation -- so presumably the variable label for any relevant variable will at the very least have the characters `"seg"` somewhere in it:
+
+```{r search_labels}
+grep("seg", sapply(gss, attr, "label"), value = TRUE)
+
+#similarly, the one relevant to inter-racial marriage should 
+#  at a minimum contain the string "marr"
+grep("marr", sapply(gss, attr, "label"), value = TRUE)
+
+#Now that we've identified the relevant variables, we can explore them
+gss[ , class(racseg)]
+```
+
+The `labelled` class is specific to the `haven` package.  Look up the `?labelled` help file to learn more. The  `"labels"` attribute tells us the mapping between the integer values the variable takes and what that integer stands for.
+
+```{r seg_mar}
+gss[ , attr(racseg, "labels")]
+gss[ , attr(racmar, "labels")]
+
+## Once we know what the values stand for, the one-way table
+##   will make sense once we see it:
+gss[ , table(racseg)]
+gss[ , table(racmar)]
+```
+
+Note that there are >50,000 observations in the whole  data set, but not nearly that many in these tables. That's because these questions are plagued by  extensive non-response; also, they simply weren't asked in some years of the survey. To see the missing responses, use the `useNA` argument to `table`:
+
+```{r missing_table}
+gss[ , table(racseg, useNA = "ifany")]
+gss[ , table(racmar, useNA = "ifany")]
+```
+  
+## Task 2 : Segregation
+
+Given what we learned above, we'll want to exclude non-respondents from our calculations; also, those who are anti-segregation correspond to those responding either `3` or `4` on `racseg`:
+
+```{r segregation, results = "hide"}
+gss[!is.na(racseg), anti_segregation := 
+      racseg %in% c(3, 4)]
+```
+
+## Task 3: Interracial Marriage
+
+Defining support for interracial marriage is nearly identical:
+
+```{r inter.marriage, results = "hide"}
+gss[!is.na(racmar), pro_interracial_marriage := racmar == 2]
+```
+
+## Task 4: Averages by Year
+
+Luckily the year of the observation is simply stored in the variable `year`. Remembering that there are many missing observations in each of our indicators, we'll have to use the `na.rm` argument to handle these. By default, R returns `NA` if we try and take the mean of any variable that has a missing observation; if we set `na.rm = TRUE`, R will exclude all of the missing rows and take the average of the remaining rows.
+
+```{r averages.by.year}
+#.(a = mean(b)) will return a column named "a" which
+#  is equal to the mean of the column b.
+gss[ , .(pct_anti_segregation = 
+           mean(anti_segregation, na.rm = TRUE), 
+         pct_pro_interracial_marriage = 
+           mean(pro_interracial_marriage, na.rm = TRUE)),
+     #recall that we use keyby to be sure the output is sorted.
+     keyby = year]
+```
+
+## Task 5: Plot
+
+```{r graph, results = "hide"}
+#the first part is just a copy-paste of the
+#  answer to the prior task
+gss[ , .(pct_anti_segregation = 
+           mean(anti_segregation, na.rm = TRUE), 
+         pct_pro_interracial_marriage = 
+           mean(pro_interracial_marriage, na.rm = TRUE)),
+     #we take the result of the earlier task, and perform
+     #  more calculations on the result by adding a 
+     #  second pair of square braces; the second pair of
+     #  square braces allows us to access the results of
+     #  the first pair of square braces.
+     keyby = year][ , {
+       #see ?matplot
+       matplot(year, cbind(pct_anti_segregation, 
+                           pct_pro_interracial_marriage),
+               main = "Evolution of Attitudes Towards Racial Issues",
+               xlab = "Year", ylab = "Proportion", las = 1L,
+               type = "l", lwd = 3L, lty = 1L, col = c("red", "blue"))
+       legend("topleft", legend = c("Anti-Segregation",
+                                    "Pro-Interracial Marriage"),
+              col = c("red", "blue"), lty = 1L, lwd = 3L)}]
+```
