@@ -1,0 +1,97 @@
+---
+title: "PS5 Through R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+## Problem 1
+
+### Part b) 
+
+```{r plot_marg_exp}
+xx = seq(0, 1, length.out = 1000L)
+pi = function(x) .1 + 2.7*x - 7.47*x^2 + 5.57*x^3
+plot(xx, pi(xx), type = "l", lwd = 3L, col = "red",
+     xlab = "x", ylab = "E[Y | X = x]", ylim = c(0, 1),
+     main = "Conditional Mean of Y over Domain of X")
+```
+
+### Part d), e), g)
+
+Refer back to the PS4 supplement for more details of this approach to simulation.
+
+```{r mean_y}
+library(data.table)
+pdf = CJ(x = xx, y = c(TRUE, FALSE))
+pdf[(y), p := pi(x)]
+pdf[(!y), p := 1 - pi(x)]
+pdf[ , p := p/sum(p)]
+
+pdf[ , .SD[sample(.I, 1e6, replace = TRUE, prob = p), 
+           .(`(d)` = mean(y), `(e)` = mean(x*y),
+             #X is continuous -- in simulation, since
+             #  the probability X = .27 is ZERO, we
+             #  have to condition on X being _close to_ .27;
+             #  we want to pick an interval small enough
+             #  not to give a biased answer, but large enough
+             #  to be sure we have a decent sample size in that
+             #  small interval -- a classic bias-variance tradeoff!
+             `(g)` = mean(y[abs(x - .27) < .005]) - 
+               mean(y[abs(x - .63) < .005]))]]
+```
+
+## Problem 2
+
+There are two main approaches to declaring a matrix in R. The first is to "glue" the matrix together from column or row vectors -- using `cbind` and `rbind`, respectively. The second is to build the matrix from scratch using `matrix`, which accepts `ncol` and `nrow` arguments to tell R what the dimension of the output is supposed to be. By default, `matrix` fills the output column-wise, meaning `matrix(1:4, nrow = 2, ncol = 2)` will fill 1 in the 1,1 cell, 2 in the 2,1 cell, then move to the second column and put 3 in the 1,2 cell and finally 4 in the 2,2 cell. We could fill row-wise by setting the argument `byrow` to be `TRUE`. 
+
+```{r all_parts, error = TRUE}
+A = cbind(c(3, -2, 9))
+B = cbind(c(8, 0, -1))
+C = matrix(c(7, 0, -1, 2, 5, -4), nrow = 2L)
+D = matrix(c(3, 3, 3, 1, 4, -7), nrow = 3L)
+E = cbind(c(5, 2, 3), c(1, 0, -4), c(-2, 1, -6))
+F = matrix(c(4, 0, 2, 1, 7, -3, -5, 7, 0), nrow = 3L)
+G = cbind(c(2, -3, 1, 1), c(-8, 7, 0, 2), c(-5, -4, 3, 6))
+K = cbind(c(-9, -2, -1, 0))
+L = rbind(c(5, 0, 3, 1))
+
+## a)
+A + B
+## b)
+-G
+## c)
+t(D)
+## d)
+C + D
+## e)
+3*C - 2*t(D)
+## f) dot product is also known as the inner product
+t(A) %*% B
+## g)
+C %*% B
+## h)
+B %*% C
+## i)
+F %*% B
+## j)
+E %*% F
+## k) #re-arranging intelligently
+L %*% K
+## l) see ?norm - there are many different types of matrix norm
+norm(K, type = "F")
+## m)
+t(G)
+## n)
+E - 5 * diag(3L)
+```
+
+## Problem 3
+
+```{r invert}
+Q = matrix(c(1, 2, 3, 7), nrow = 2L)
+solve(Q)
+Q %*% solve(Q)
+```
+
