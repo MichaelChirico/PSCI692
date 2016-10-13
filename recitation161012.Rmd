@@ -1,0 +1,125 @@
+---
+title: "Simulation of PS6:2"
+runtime: shiny
+output: html_document
+---
+
+For the purposes of this simulation, suppose $\theta_0 = 6$. That is, the true value of $\theta_0$ is known to us, and it's 6. Everything else will be a matter of trying to use the data we've got to identify this.
+
+## Part c)
+
+We can estimate the CDF for a given value of $n$ by repeatedly (say, $m$ times) taking uniformly distributed samples, and calculating $\hat{\theta}_n$ on each of these $m$ samples. This is made much easier in R using the `replicate` function. 
+
+```{r part.c.code, eval = FALSE}
+#fix n, and take m samples
+theta_ns = replicate(m, 
+                     #theta_n is, for each sample, the max of the draws
+                     max(
+                       #on each sample, generate n U[0, theta_0] draws
+                       runif(n, min = 0, max = theta_0)
+                     ))
+
+#To get the CDF of this, we can do
+ecdf(theta_ns)(theta_ns)
+```
+
+
+```{r part.c.plot, echo = FALSE}
+#set "true" theta_0:
+
+th = 6
+
+inputPanel(
+  sliderInput("n.c", label = "Sample Size (n)",
+              min = 1, max = 500, value = 2, step = 1),
+  
+  selectInput("m.c", label = "Simulation Size (m)",
+              choices = c(100, 1000, 10000), selected = 1000)
+)
+
+renderPlot({
+  theta_ns = sort(replicate(input$m.c, max(runif(input$n.c, 0, th))))
+  plot(theta_ns, ecdf(theta_ns)(theta_ns), type = "l", lwd = 3L, 
+       main = expression(paste("Estimated CDF of ", hat(theta)[n])),
+       cex = 2, cex.lab = 1.5, xlim = c(0, th),
+       ylab = expression(paste("Pr. At Most ", theta)), xlab = expression(theta))
+})
+```
+
+## Part d)
+
+Again, we can just find $m$ samples, and on each of these, for a given $\epsilon$, calculate this probability as an expectation.
+
+```{r part.d.code, eval = FALSE}
+mean(abs(replicate(m, max(runif(n, 0, theta_0))) - theta_0) < epsilon)
+```
+
+```{r part.d.plot, echo = FALSE}
+inputPanel(
+  sliderInput("n.d", label = "Sample Size (n)",
+              min = 1, max = 500, value = 2, step = 1),
+  
+  selectInput("m.d", label = "Simulation Size (m)",
+              choices = c(100, 1000, 10000), selected = 1000)
+)
+
+renderPlot({
+  par(mar = c(5.1, 5.1, 4.1, 2.1))
+  theta_ns = replicate(input$m.d, max(runif(input$n.d, 0, th)))
+  epsil = seq(0, th, length.out = 100)
+  plot(epsil, sapply(epsil, function(ee) mean(abs(theta_ns - th) < ee)), 
+       main = expression(paste("How Far ", hat(theta)[n], " Gets from ", theta[0])),
+       cex = 2, cex.lab = 1.5, xlim = c(0, th), type = "l", lwd = 3L, 
+       ylab = expression(paste("Pr[|", hat(theta)[n], "-", theta[0], "|<", epsilon, "]")),
+       xlab = expression(epsilon))
+})
+```
+
+## Part g)
+
+Instead of using `ecdf`, we can use `density` to get the PDF:
+
+```{r part.g.code, eval = FALSE}
+density(replicate(m, max(runif(n, min = 0, max = theta_0))))
+```
+
+Note that, for small $n$, since it is rare to get a $\hat{\theta}_n$ close to the truth, our plot does a poor job of estimating the true PDF for such $\theta$.
+
+```{r part.g.plot, echo = FALSE}
+inputPanel(
+  sliderInput("n.g", label = "Sample Size (n)",
+              min = 1, max = 500, value = 2, step = 1),
+  
+  selectInput("m.g", label = "Simulation Size (m)",
+              choices = c(100, 1000, 10000), selected = 1000)
+)
+
+renderPlot({
+  dd = density(replicate(input$m.g, max(runif(input$n.g, 0, th))))
+  plot(dd$x, dd$y, type = "l", lwd = 3L, 
+       main = expression(paste("Estimated PDF of ", hat(theta)[n])),
+       cex = 2, cex.lab = 1.5, xlim = c(0, th),
+       ylab = "Density", xlab = expression(theta))
+})
+```
+
+## Part j)
+
+```{r part.j.plot, echo = FALSE}
+inputPanel(
+  sliderInput("n.j", label = "Sample Size (n)",
+              min = 1, max = 500, value = 2, step = 1),
+  
+  selectInput("m.j", label = "Simulation Size (m)",
+              choices = c(100, 1000, 10000), selected = 1000)
+)
+
+renderPlot({
+  dd = density(replicate(input$m.j, 2*mean(runif(input$n.j, 0, th))))
+  plot(dd$x, dd$y, type = "l", lwd = 3L, 
+       main = expression(paste("Estimated PDF of ", ring(theta)[n])),
+       cex = 2, cex.lab = 1.5, xlim = c(0, 2*th),
+       ylab = "Density", xlab = expression(theta))
+})
+```
+
