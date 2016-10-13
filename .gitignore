@@ -1,4 +1,6 @@
 .Rhistory
+#shiny-related files for shinyapps deployment
+rsconnect
 
 *.pdf
 *.png
