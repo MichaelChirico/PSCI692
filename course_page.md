@@ -2,7 +2,7 @@
 
 Welcome to the course page! I'll post recitation worksheet solutions here.
 
-## Worksheets
+## Recitation Materials
 
 * [In-Class Worksheet: September 1, 2016](recitation160901.pdf) [[solutions](recitation160901_sol.pdf)]
 
@@ -11,6 +11,10 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 * [In-Class Worksheet: September 15, 2016](recitation160915.pdf) [[solutions](recitation160915_sol.pdf)]
 
 * [In-Class Worksheet: September 29, 2016](recitation160929.pdf) [[solutions](recitation160929_sol.pdf)]
+
+* [Simulations about Estimator Distribution: October 13, 2016](https://michaelchirico.shinyapps.io/recitation161012/)
+
+* [Visualizations about Maximum Likelihood: October 20, 2016](https://michaelchirico.shinyapps.io/recitation161020/)
 
 ## Problem Sets
 

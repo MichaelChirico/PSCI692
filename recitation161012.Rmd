@@ -91,19 +91,33 @@ inputPanel(
               min = 1, max = 500, value = 2, step = 1),
   
   selectInput("m.g", label = "Simulation Size (m)",
-              choices = c(100, 1000, 10000), selected = 1000)
+              choices = c(100, 1000, 10000), selected = 1000),
+  
+  radioButtons("add.mean", label = "Add Part (j) Plot?",
+               choices = list(Yes = "y", No = "n"), selected = "No")
 )
 
 renderPlot({
-  dd = density(replicate(input$m.g, max(runif(input$n.g, 0, th))))
-  plot(dd$x, dd$y, type = "l", lwd = 3L, 
-       main = expression(paste("Estimated PDF of ", hat(theta)[n])),
-       cex = 2, cex.lab = 1.5, xlim = c(0, th),
-       ylab = "Density", xlab = expression(theta))
+  add.mean = input$add.mean == "y"
+  dd.max = density(replicate(input$m.g, max(runif(input$n.g, 0, th))))
+  
+  plot(dd.max$x, dd.max$y, type = "l", lwd = 3L, 
+         main = expression(paste("Estimated PDF of ", hat(theta)[n])),
+         cex = 2, cex.lab = 1.5, xlim = c(0, (1 + add.mean) * th),
+         ylab = "Density", xlab = expression(theta))
+  
+  if (add.mean) {
+    dd.mean = density(replicate(input$m.g, 2*mean(runif(input$n.g, 0, th))))
+    lines(dd.mean$x, dd.mean$y, col = "darkgreen", lwd = 3L)
+    legend("topright", legend = c("Part g)", "Part j)"), lwd = 3L,
+           col = c("black", "darkgreen"))
+  } 
 })
 ```
 
 ## Part j)
+
+Drawing Part j) separately so we can focus on it alone
 
 ```{r part.j.plot, echo = FALSE}
 inputPanel(
