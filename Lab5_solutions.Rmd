@@ -1,0 +1,77 @@
+---
+title: "Plotting the Bernoulli Likelihood in R"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+## Simulate Drawing 5 observations from Bernoulli(.45)
+
+```{r sampling}
+# for reproducibility
+set.seed(20161021)
+
+# Could also use rbinom(5, 1, .45)
+x = runif(n = 5) <= .45
+
+x
+```
+
+## Likelihood
+
+The likelihood of a Bernoulli sample is given by:
+
+$$ \mathcal{L}(p | x) = \prod_{i = 1}^n p^{x_i} (1 - p)^{1 - x_i} = p^{\sum_{i = 1}^n x_i} (1 - p)^{\sum_{i = 1}^n(1 - x_i)} $$
+
+For example, suppose the first three observations were equal to `TRUE` and the last two were equal to `FALSE`. Each of the `TRUE` observations occurs with probability $p$; the others with probability $1-p$. The $\sum_{i = 1}^n x_i$ part counts the `TRUE` observations; the $\sum_{i = 1}^n (1 - x_i)$ part counts the `FALSE` observations.
+
+We can code this up as:
+
+```{r plotting}
+#create a function or easier replication/repetition
+bern.lik = function(p, x) p^sum(x) * (1-p)^sum(!x)
+
+#create a grid of potential p values
+ps = seq(0, 1, length.out = 1000L)
+
+#store the likelihood values
+plot(ps, bern.lik(ps, x), type = "l", lwd = 3L, las = 1L,
+     xlab = "p", ylab = "Likelihood", col = "darkgreen",
+     main = paste0("Likelihood Function on Size-5 Bernoulli Sample\n",
+                   "With True Parameter .45"))
+```
+
+## Repeating for 10 observations
+
+Just copy-paste, only changing what needs to be changed
+
+```{r size_10}
+n = 10
+x = runif(n) <= .45
+plot(ps, bern.lik(ps, x), type = "l", lwd = 3L, las = 1L,
+     xlab = "p", ylab = "Likelihood", col = "darkgreen",
+     main = paste0("Likelihood Function on Size-", n, " Bernoulli Sample\n",
+                   "With True Parameter .45"))
+```
+
+## For 100 observations
+
+```{r}
+n = 100
+plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
+     xlab = "p", ylab = "Likelihood", col = "darkgreen",
+     main = paste0("Likelihood Function on Size-", n, " Bernoulli Sample\n",
+                   "With True Parameter .45"))
+```
+
+## For 1000 observations
+
+```{r}
+n = 1000
+plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
+     xlab = "p", ylab = "Likelihood", col = "darkgreen",
+     main = paste0("Likelihood Function on Size-", n, " Bernoulli Sample\n",
+                   "With True Parameter .45"))
+```
+
