@@ -57,7 +57,7 @@ plot(ps, bern.lik(ps, x), type = "l", lwd = 3L, las = 1L,
 
 ## For 100 observations
 
-```{r}
+```{r size_100}
 n = 100
 plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
      xlab = "p", ylab = "Likelihood", col = "darkgreen",
@@ -67,11 +67,22 @@ plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
 
 ## For 1000 observations
 
-```{r}
+```{r size_1000}
 n = 1000
 plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
      xlab = "p", ylab = "Likelihood", col = "darkgreen",
      main = paste0("Likelihood Function on Size-", n, " Bernoulli Sample\n",
                    "With True Parameter .45"))
+```
+
+We could have done this all in a few lines of code like so:
+
+```{r all_together}
+par(mfrow = c(2L, 2L))
+for (n in c(5L, 10L, 100L, 1000L)) {
+  plot(ps, bern.lik(ps, runif(n) <= .45), type = "l", lwd = 3L, las = 1L,
+     xlab = "p", ylab = "Likelihood", col = "darkgreen",
+     main = paste0("Sample Size: ", n))
+}
 ```
 
