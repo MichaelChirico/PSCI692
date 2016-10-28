@@ -85,4 +85,3 @@ for (n in c(5L, 10L, 100L, 1000L)) {
      main = paste0("Sample Size: ", n))
 }
 ```
-

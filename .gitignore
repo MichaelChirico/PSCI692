@@ -15,3 +15,6 @@ rsconnect
 
 #don't need to track course page here
 *.html
+
+#some data files
+*.dta

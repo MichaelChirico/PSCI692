@@ -35,3 +35,5 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 * [GSS Survey Lab Instructions for R](Lab3R.txt) [[solutions](Lab3_solutions)]
 
 * [Bernoulli likelihood](Lab5_solutions)
+
+* [Reproducing Fujiwara](Lab6_solutions)

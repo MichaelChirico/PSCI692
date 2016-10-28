@@ -1,0 +1,257 @@
+---
+title: "Reproducing Fujiwara (2015) Figure 2"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+# Load Data
+
+```{r loading}
+library(haven)      #for reading in .dta files
+library(data.table) #for simple manipulation of data
+
+brazil = setDT(read_dta("munic.dta"))
+```
+
+# Un-binned Scatterplot
+
+In the paper, the range of the data is restricted to municipalities with registrations in 1996 between 0 and 100,000, so we apply the same restriction.
+
+```{r unbinned, results = "hide"}
+brazil[voters96 <= 1e5, {
+  plot(voters96, r_util94, main = "Figure 2 (Fujiawara 2015)",
+       #read ?points to see all the possible values of pch
+       #  cex determines the point size -- chosen by tinkering
+       pch = 15L, col = "darkgreen", cex = 2, ylim = c(0, 1),
+       xaxt = "n", xlab = "Number of Registered Voters -- 1996",
+       ylab = "Valid Votes/Turnout")
+  points(voters96, r_util98, pch = 16L, col = "blue", cex = 2)
+  points(voters96, r_util02, pch = 17L, col = "red", cex = 2)
+  #add a vertical line demarcating the cutoff
+  abline(v = 40500, col = "salmon", lwd = 3L)
+  #add gray lines as in the plot
+  #  Check this page for a quick reference on all the possible
+  #  color values in R:
+  #  http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf
+  abline(h = .1*(1:9), col = "gray60", lwd = 2L)
+}]
+```
+
+# Binning
+
+It's unclear what exact bins Fujiwara uses -- he simply states their width, not their start point (so he may be using [0, 4000] or [500, 4500] as the lowest bin). The bins don't appear to line up over 2000, 6000, 10000, etc., but they do appear to be spread evenly on either side of the cutoff point of 40,500. So the bins may end at 40,500 and have their midpoints at 38,500, 42,500 and so on.
+
+We also add a restriction that there must be at least 500 voters, since it appears those municipalities were excluded as well.
+
+```{r binning}
+bin_ends = 40500 + 4000*(-10:15)
+brazil[voters96 %between% c(500, 1e5), .N, 
+       keyby = cut(voters96, 
+                   breaks = bin_ends,
+                   right = FALSE)]
+```
+
+Now we can use this cut to plot:
+
+```{r binning_plot, results = "hide"}
+brazil[voters96 %between% c(500, 1e5), 
+       #turns out there's some missing data here
+       #  that the author failed to mention
+       .(dot_94 = mean(r_util94, na.rm = TRUE),
+         dot_98 = mean(r_util98),
+         dot_02 = mean(r_util02)), 
+       keyby = .(bins = 
+                   cut(voters96, 
+                       breaks = bin_ends,
+                       #adding labels to facilitate plotting
+                       labels = head(filter(bin_ends, c(.5, .5)), -1),
+                       right = FALSE))
+       ][ , {
+         #so that the grid marks and demarcation line appear in 
+         #  the background, switch the plotting order. This requires
+         #  starting with an empty plot (making sure it has the
+         #  correct axis limits), then adding the background lines,
+         #  then adding the points.
+         plot(NULL, xlim = c(0, 1e5), ylim = c(min(dot_94), 1),
+              main = "Figure 2 (Fujiwara 2015)", yaxt = "n",
+              xlab = "Number of Registered Voters -- 1996",
+              ylab = "Valid Votes/Turnout", xaxt = "n")
+         abline(v = 40500, col = "salmon", lwd = 3L)
+         abline(h = .1*(6:9), col = "gray60", lwd = 2L)
+         matplot(bins, cbind(dot_94, dot_98, dot_02),
+                 #need add = TRUE to make sure it's added
+                 #  to the current plot (instead of starting another)
+                 pch = 15:17, add = TRUE,
+                 col = c("darkgreen", "blue", "red"))
+         axis(side = 1L, at = 20000*0:5,
+              #sprintf is your friend for preventing figures
+              #  from being printed with scientific notation
+              labels = sprintf("%6d", 20000*0:5))
+         axis(side = 2L, at = .1*(6:10))}]
+```
+
+# Bells and Whistles
+
+## Adding the quadratic fit curves
+
+We'll need to run three separate regressions, one for each election and each side of the threshold. Then we'll get fitted values and plot them.
+
+```{r quad_fit, echo = -1, results = "hide"}
+brazil[voters96 %between% c(500, 1e5), 
+       #turns out there's some missing data here
+       #  that the author failed to mention
+       .(dot_94 = mean(r_util94, na.rm = TRUE),
+         dot_98 = mean(r_util98),
+         dot_02 = mean(r_util02)), 
+       keyby = .(bins = 
+                   cut(voters96, 
+                       breaks = bin_ends,
+                       #adding labels to facilitate plotting
+                       labels = head(filter(bin_ends, c(.5, .5)), -1),
+                       right = FALSE))
+       ][ , {
+         #so that the grid marks and demarcation line appear in 
+         #  the background, switch the plotting order. This requires
+         #  starting with an empty plot (making sure it has the
+         #  correct axis limits), then adding the background lines,
+         #  then adding the points.
+         plot(NULL, xlim = c(0, 1e5), ylim = c(min(dot_94), 1),
+              main = "Figure 2 (Fujiwara 2015)", yaxt = "n",
+              xlab = "Number of Registered Voters -- 1996",
+              ylab = "Valid Votes/Turnout", xaxt = "n")
+         abline(v = 40500, col = "salmon", lwd = 3L)
+         abline(h = .1*(6:9), col = "gray60", lwd = 2L)
+         matplot(bins, cbind(dot_94, dot_98, dot_02),
+                 #need add = TRUE to make sure it's added
+                 #  to the current plot (instead of starting another)
+                 pch = 15:17, add = TRUE,
+                 col = c("darkgreen", "blue", "red"))
+         axis(side = 1L, at = 20000*0:5,
+              #sprintf is your friend for preventing figures
+              #  from being printed with scientific notation
+              labels = sprintf("%6d", 20000*0:5))
+         axis(side = 2L, at = .1*(6:10))}]
+
+predict_x = seq(0, 1e5, length.out = 1000)
+regs = with(brazil[voters96 < 1e5], 
+            lapply(list(line94 = r_util94,
+                        line98 = r_util98,
+                        line02 = r_util02),
+                   function(yvar) 
+                     lm(yvar ~ I(voters96 < 40500)*
+                          (voters96 + I(voters96^2)))))
+cols = c(line94 = "darkgreen", 
+         line98 = "blue", line02 = "red")
+sapply(names(regs), function(rr.n)
+  lines(predict_x, predict(regs[[rr.n]], data.frame(voters96 = predict_x)),
+        col = cols[rr.n]))
+```
+
+## Point size depends on population in bin
+
+As we saw above, the left-hand-side bins have MANY more municipalities within them. Thus to represent each municipality with the same sized marker is somewhat misleading. We can fix that! See [this](http://stackoverflow.com/questions/2579995/control-the-size-of-points-in-an-r-scatterplot) StackOverflow answer.  
+
+```{r point_proportion, results = "hide"}
+brazil[voters96 %between% c(500, 1e5), 
+       .(dot_94 = mean(r_util94, na.rm = TRUE),
+         dot_98 = mean(r_util98),
+         dot_02 = mean(r_util02),
+         count = .N), 
+       keyby = .(bins = 
+                   cut(voters96, 
+                       breaks = bin_ends,
+                       labels = head(filter(bin_ends, c(.5, .5)), -1),
+                       right = FALSE))
+       ][ , {
+         plot(NULL, xlim = c(0, 1e5), ylim = c(min(dot_94), 1),
+              main = "Figure 2 (Fujiwara 2015)", yaxt = "n",
+              xlab = "Number of Registered Voters -- 1996",
+              ylab = "Valid Votes/Turnout", xaxt = "n")
+         abline(v = 40500, col = "salmon", lwd = 3L)
+         abline(h = .1*(6:9), col = "gray60", lwd = 2L)
+         #matplot was smart enough to know we wanted the factor
+         #  labels; we have to force symbols to know that
+         symbols(as.numeric(levels(bins)), bg = "darkgreen", 
+                 fg = NULL, inches = 1/3,
+                 dot_94, squares = sqrt(count), add = TRUE)
+         symbols(as.numeric(levels(bins)), bg = "blue", 
+                 fg = NULL, inches = 1/3,
+                 dot_98, circles = sqrt(count), add = TRUE)
+         symbols(as.numeric(levels(bins)),dot_02, 
+                 #stars is weird. I had to play around a lot with
+                 #  this to get it to look OK.
+                 stars = matrix(sqrt(count ), ncol = 3L,
+                                nrow = length(dot_02)),
+                 add = TRUE, bg = "red", fg = NULL, inches = 1/3)
+         axis(side = 1L, at = 20000*0:5,
+              #sprintf is your friend for preventing figures
+              #  from being printed with scientific notation
+              labels = sprintf("%6d", 20000*0:5))
+         axis(side = 2L, at = .1*(6:10))}]
+sapply(names(regs), function(rr.n)
+  lines(predict_x, predict(regs[[rr.n]], data.frame(voters96 = predict_x)),
+        col = "black", lwd = 2))
+sapply(names(regs), function(rr.n)
+  lines(predict_x, predict(regs[[rr.n]], data.frame(voters96 = predict_x)),
+        col = cols[rr.n]))
+```
+
+## Bootstrap Confidence Intervals
+
+Are the jumps in the data significant? We can tell how much natural variability there is in the data by bootstrapping and finding the envelope of reasonable values for the percentages in each election at each registration level.
+
+```{r bootstrapping, results = "hide"}
+set.seed(20161028)
+boot_bound = 
+  rbindlist(lapply(integer(5000), function(...) {
+    regs = with(brazil[voters96 < 1e5][sample(.N, .N, replace = TRUE)], 
+                lapply(list(elec94 = r_util94,
+                            elec98 = r_util98,
+                            elec02 = r_util02),
+                       function(yvar) 
+                         lm(yvar ~ I(voters96 < 40500)*
+                              (voters96 + I(voters96^2)))))
+    rbindlist(lapply(regs, function(rr)
+      list(voters96 = predict_x, 
+           pred_votes = predict(rr, data.frame(voters96 = predict_x)))),
+      idcol = "election")}), idcol = "bb"
+    )[ , .(wh = c("lower", "upper"),
+           val = quantile(pred_votes, c(.05, .95))),
+           keyby = .(election, voters96)
+       ][ , dcast(.SD, voters96 ~ election + wh, value.var = "val")]
+
+#re-doing the plot, adding confidence intervals
+brazil[voters96 %between% c(500, 1e5), 
+       .(dot_94 = mean(r_util94, na.rm = TRUE),
+         dot_98 = mean(r_util98),
+         dot_02 = mean(r_util02)), 
+       keyby = .(bins = 
+                   cut(voters96, 
+                       breaks = bin_ends,
+                       labels = head(filter(bin_ends, c(.5, .5)), -1),
+                       right = FALSE))
+       ][ , {
+         plot(NULL, xlim = c(0, 1e5), ylim = c(min(dot_94), 1),
+              main = "Figure 2 (Fujiwara 2015)", yaxt = "n",
+              xlab = "Number of Registered Voters -- 1996",
+              ylab = "Valid Votes/Turnout", xaxt = "n")
+         abline(v = 40500, col = "salmon", lwd = 3L)
+         abline(h = .1*(6:9), col = "gray60", lwd = 2L)
+         matplot(bins, cbind(dot_94, dot_98, dot_02),
+                 pch = 15:17, add = TRUE,
+                 col = c("darkgreen", "blue", "red"))
+         axis(side = 1L, at = 20000*0:5,
+              labels = sprintf("%6d", 20000*0:5))
+         axis(side = 2L, at = .1*(6:10))}]
+sapply(names(regs), function(rr.n)
+  lines(predict_x, predict(regs[[rr.n]], data.frame(voters96 = predict_x)),
+        col = cols[rr.n]))
+
+boot_bound[ , matplot(voters96, Reduce(cbind, .SD),
+                      col = c("red", "red", "darkgreen", "darkgreen",
+                              "blue", "blue"), type = "l",
+                      lty = 2L, add = TRUE),
+            .SDcols = -1L]
+```
