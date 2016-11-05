@@ -5,6 +5,7 @@ rsconnect
 *.pdf
 *.png
 *.ods
+*.xlsx
 
 #LaTeX-associated files which don't need to be tracked
 *.aux

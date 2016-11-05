@@ -1,0 +1,160 @@
+---
+title: "Simulating Election Results"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+# The New York Times Model (Uncorrelated Polls)
+
+Draws from the Beta distribution can be retrieved from `rbeta`. 
+
+```{r nyt}
+set.seed(20161104)
+nn = 1e4 #10,000 draws
+beta_draws = cbind(WI = rbeta(nn, shape1 = 102.922, shape2 = 85.1391),
+                   MI = rbeta(nn, shape1 = 167.368, shape2 = 144.342),
+                   PA = rbeta(nn, shape1 = 248.777, shape2 = 222.201))
+#note the effect of having specified WI = ...
+#  each column is clearly associated with a state
+head(beta_draws)
+```
+
+## Generating shocks with a specified covariance
+
+See [this](http://stats.stackexchange.com/questions/12953/generating-values-from-a-multivariate-gaussian-distribution) Q & A on CrossValidated.
+
+Also scan the Wikipedia article about [Cholesky decomposition](https://en.wikipedia.org/wiki/Cholesky_decomposition) of a matrix.
+
+The main takeaway is that if we want to generate a vector of random draws from the distribution $Y \sim N(\mu, \Sigma)$, we can transform an equal-length set of independent draws from $Z \sim N(0, I)$ with:
+
+$Y = \mu + L Z$
+
+Where $L$ is the Cholesky decomposition of $\Sigma$, i.e., $LL^{T} = \Sigma$. We can get the Cholesky decomposition of a matrix in R by using `chol`.
+
+```{r nyt_disturbances}
+#choosing the desired bias and variance-covariance matrix:
+mu = c(WI = 0, MI = 0, PA = 0)
+Sigma = matrix(c(.1, 0, 0,
+                 0, .1, 0,
+                 0, 0, .1),
+               #if we don't specify nrow &/or ncol,
+               #  R assumes we just want a vector
+               nrow = 3L, ncol = 3L, 
+               #row names come first, then column names;
+               #  see ?matrix
+               dimnames = list(c("WI", "MI", "PA"),
+                               c("WI", "MI", "PA")))
+
+nyt_err = mu + matrix(rnorm(3*nn), ncol = 3L) %*% chol(Sigma)
+head(nyt_err)
+#These numbers are too big! If we're adding numbers like 36%
+#  or more we're bound to get outcomes outside the [0,1] range.
+#  So we've got to try specifying Sigma again
+Sigma = matrix(c(.01, 0, 0,
+                 0, .01, 0,
+                 0, 0, .01),
+               #if we don't specify nrow &/or ncol,
+               #  R assumes we just want a vector
+               nrow = 3L, ncol = 3L, 
+               #row names come first, then column names;
+               #  see ?matrix
+               dimnames = list(c("WI", "MI", "PA"),
+                               c("WI", "MI", "PA")))
+
+nyt_err = mu + matrix(rnorm(3*nn), ncol = 3L) %*% t(chol(Sigma))
+```
+
+## NYT Outcomes
+
+```{r nyt_outcome}
+nyt_out = beta_draws + nyt_err
+head(nyt_out)
+#Make sure that all of our outcomes
+#  for each election make sense
+apply(nyt_out, 2L, range)
+
+hillary_wins_state = nyt_out > .5
+head(hillary_wins_state)
+
+hillary_states = rowSums(hillary_wins_state)
+head(hillary_states)
+
+hillary_win_pct = mean(hillary_states >= 2)
+hillary_win_pct
+```
+
+# 538 Simulations
+
+We can re-use `beta_draws` from above; just need to re-draw the error terms with a new `Sigma` matrix of our choosing:
+
+```{r five38}
+Sigma538 = matrix(c(.01, .00005, .00005,
+                    .00005, .01, .00005,
+                    .00005, .00005, .01),
+                  nrow = 3L, ncol = 3L, 
+                  dimnames = list(c("WI", "MI", "PA"),
+                                  c("WI", "MI", "PA")))
+
+five38_err = mu + matrix(rnorm(3*nn), ncol = 3L) %*% t(chol(Sigma538))
+five38_out = beta_draws + five38_err
+apply(five38_out, 2L, range)
+hillary_win_pct = 
+  mean(rowSums(five38_out > .5) >= 2)
+hillary_win_pct
+```
+
+# Making this easier to tinker with
+
+It's a pain to write out all of $\Sigma$, for two reasons.
+
+ 1. We know $\Sigma$ is symmetric, but we still have to type out all of the entries (wasted typing).
+ 2. It's a requirement that $\Sigma$ be positive semi-definite (a multivariate version of requiring that the variance is positive, see [here](https://en.wikipedia.org/wiki/Positive-definite_matrix)). This is a lot harder to eyeball; basically, things are driven by the relationship:
+ 
+ $$ \rho_{XY} = \frac{\sigma_{XY}}{\sigma_X\sigma_Y} $$
+ 
+ Since this can be at most one in absolute value, we know that an off-diagonal entry must be bounded between:
+ 
+ $$ -\sigma_X \sigma_Y \leq \sigma_{XY} \leq \sigma_X \sigma_Y $$
+
+It would be much easier if we could just specify the correlations, since it's easy to pick correlations, and the standard deviations, since it's easy to pick those, too.
+
+So what we'll do is write a function that takes 3 things as input:
+
+ 1. The three means of the error terms
+ 2. The three standard deviations of the error terms
+ 3. The 3 correlations -- WI-MI, WI-PA, and MI-PA
+ 
+ And outputs the NYT simulation result compared to the 538 simulation result.
+ 
+ Here's the code; check it out on the widget here:
+ 
+ 
+```{r as_function}
+compare_simulations = function(mus, sds, corrs) {
+  beta_draws_bi =
+    cbind(rbeta(nn, shape1 = 102.922, shape2 = 85.1391),
+          rbeta(nn, shape1 = 167.368, shape2 = 144.342),
+          #include mean-shift here for minor efficiency boost
+          rbeta(nn, shape1 = 248.777, shape2 = 222.201)) + mus
+  
+  #draw the same errors for both approaches, for efficiency
+  ind_err = matrix(rnorm(3*nn), ncol = 3L)
+  
+  #NYT vs. 538 simulations differ only in
+  #  off-diagonal terms of Sigma. So declare
+  #  the Cholesky decomposition from the
+  #  correlation matrix having 0 off-diagonal first
+  corr_mat = diag(3)
+  L = t(chol(diag(sds) %*% corr_mat %*% diag(sds)))
+  nyt = 100*mean(rowSums((beta_draws_bi + (ind_err %*% L)) > .5) >= 2)
+  # now add the specified correlations in the off-diagonal entries
+  corr_mat[lower.tri(corr_mat)] = 
+    corr_mat[upper.tri(corr_mat)] = corrs
+  L = t(chol(diag(sds) %*% corr_mat %*% diag(sds)))
+  five38 = 100*mean(rowSums((beta_draws_bi + (ind_err %*% L)) > .5) >= 2)
+  cat("NYT says Hillary wins ", round(nyt), "% of the time.\n",
+      "538 says Hillary wins ", round(five38), "% of the time.\n", sep = "")
+}
+```

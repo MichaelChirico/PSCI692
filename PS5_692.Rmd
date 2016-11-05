@@ -94,4 +94,3 @@ Q = matrix(c(1, 2, 3, 7), nrow = 2L)
 solve(Q)
 Q %*% solve(Q)
 ```
-

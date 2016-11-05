@@ -1,0 +1,91 @@
+---
+title: "Run Your Own Simulations"
+runtime: shiny
+output: html_document
+---
+
+```{r widget, echo = FALSE}
+inputPanel(
+  column(12, 
+         sliderInput("mu.wi", label = "Bias in Polling (WI)",
+                     min = -.5, max = .5, value = 0, step = .005),
+         sliderInput("sd.wi", label = "St. Dev of Polling (WI)",
+              min = 0, max = .5, value = .05, step = .001),
+         sliderInput("r.w.m", label = "Correlation (WI-MI)",
+              min = -1, max = 1, value = 0, step = .005)),
+  column(12,
+         sliderInput("mu.mi", label = "Bias in Polling (MI)",
+              min = -.5, max = .5, value = 0, step = .005),
+         sliderInput("sd.mi", label = "St. Dev of Polling (MI)",
+              min = 0, max = .5, value = .05, step = .001),
+         sliderInput("r.m.p", label = "Correlation (MI-PA)",
+              min = -1, max = 1, value = 0, step = .005)),
+  column(12,
+         sliderInput("mu.pa", label = "Bias in Polling (PA)",
+              min = -.5, max = .5, value = 0, step = .005),
+         sliderInput("sd.pa", label = "St. Dev of Polling (PA)",
+              min = 0, max = .5, value = .05, step = .001),
+         sliderInput("r.w.p", label = "Correlation (WI-PA)",
+              min = -1, max = 1, value = 0, step = .005)),
+  column(12,
+         numericInput("nn", label = "Outcomes to Calculate",
+                      value = 10000),
+         checkboxInput("display", label = "Show 538 Scatterplots",
+                       value = TRUE))
+)
+
+renderPrint({
+  sds = c(input$sd.wi, input$sd.mi, input$sd.pa)
+  corrs = c(input$r.w.m, input$r.w.p, input$r.m.p)
+  
+  if (sum(corrs^2) >= 1 + 2*prod(corrs)) {
+    corrs_j = corrs[c(3L,1L,2L)]
+    corrs_k = corrs[c(2L,3L,1L)]
+    #based on determinant of correlation matrix must be positive
+    cutoffs = 
+      suppressWarnings(
+        round(.5*(corrs_j*corrs_k + 
+                    t(matrix(1, 2, 3)*c(-1,1))*
+                    sqrt(corrs_j^2*corrs_k^2 -
+                           4*(corrs_j^2+corrs_k^2)+4)), 3L)
+      )
+    stop("Impossible correlation matrix -- think: if X & Y are ",
+         "highly correlated, and Y & Z are highly correlated, ",
+         "X & Z must be highly correlated. Fixing the other two ",
+         "correlations, you must change:\n",
+         paste0(c("WI-MI", "MI-PA", "WI-PA"), " to be in range [",
+           cutoffs[ , 1L], ", ", cutoffs[ , 2L], "]\n"))
+  }
+  nn = input$nn
+  beta_draws_bi =
+    cbind(rbeta(nn, shape1 = 102.922, shape2 = 85.1391),
+          rbeta(nn, shape1 = 167.368, shape2 = 144.342),
+          rbeta(nn, shape1 = 248.777, shape2 = 222.201)) + 
+    input$mu.wi + input$mu.mi + input$mu.pa
+  
+  ind_err = matrix(rnorm(3*nn), ncol = 3L)
+  
+  corr_mat = diag(3)
+  L = t(chol(diag(sds) %*% corr_mat %*% diag(sds)))
+  nyt = 100*mean(rowSums((beta_draws_bi + (ind_err %*% L)) > .5) >= 2)
+  corr_mat[lower.tri(corr_mat)] = 
+    corr_mat[upper.tri(corr_mat)] = corrs
+  L = t(chol(diag(sds) %*% corr_mat %*% diag(sds)))
+  five38_val <<- beta_draws_bi + (ind_err %*% L)
+  colnames(five38_val) <<- c("WI", "MI", "PA")
+  five38 = 100*mean(rowSums(five38_val > .5) >= 2)
+  cat("NYT says Hillary wins ", round(nyt), "% of the time.\n",
+      "538 says Hillary wins ", round(five38), "% of the time.\n", sep = "")
+})
+
+renderPlot(
+  if (input$display) {
+    c(input$input$sd.wi, input$sd.mi, input$sd.pa,
+      input$r.w.m, input$r.w.p, input$r.m.p,
+      input$mu.wi, input$mu.mi, input$mu.pa, input$nn)
+    pairs(five38_val, col = "red", pch = "x",
+          main = "Pairwise Distributions of Outcomes") 
+  }
+  else NULL
+)
+```
