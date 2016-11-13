@@ -1,0 +1,83 @@
+---
+title: "Regression by Hand: Racism & Obama (Stephens-Davidowitz 2013)"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+# Reproducing Figure 4
+
+```{r figure_4, results = "hide", out.width = '100%'}
+library(data.table)
+
+race = fread("Lab8Data.csv")
+#using with here instead of race[, ]
+#  because there's a bug in data.table, see
+#  https://github.com/Rdatatable/data.table/issues/1912
+with(race, {
+  yrng = 100*range(c(obama_minus_kerry,
+                     obama12_minus_obama08), na.rm = TRUE)
+  par(mfrow = c(1L, 2L)) #create a 1x2 plot matrix
+  #plot the grid lines first so they're in the background
+  plot(NULL, xlim = 100*range(raciallycharged_scaled, na.rm = TRUE),
+       ylim = yrng, xlab = "Racially Charged Search Rate",
+       ylab = "%Obama2008 - %Kerry2004",
+       main = expression(italic("(a) Obama - Kerry")))
+  abline(h = 5 * (-2:4), col = "gray")
+  abline(h = 0, col = "black")
+  #store these on-the-fly variables
+  #  to make it easier to pass to lm below
+  points(x <- 100*raciallycharged_scaled,
+         y <- 100*obama_minus_kerry, pch = 19L,
+         col = "midnightblue")
+  #we could add the regression line by hand
+  #  using the code below, but this is more common
+  abline(reg <- lm(y ~ x), lwd = 2L, col = "darkred")
+  #see the ever-confusing ?plotmath for why I use
+  #  the following syntax, including bquote
+  legend("topright", legend = 
+           bquote(R^2 == .(sprintf("%.2f", summary(reg)$r.squared, 2L))))
+  plot(NULL, xlim = 100*range(raciallycharged_scaled, na.rm = TRUE),
+       ylim = yrng, xlab = "Racially Charged Search Rate",
+       ylab = "%Obama2012 - %Obama2008",
+       main = expression(italic("(a) Obama - Obama")))
+  abline(h = 5 * (-2:4), col = "gray")
+  abline(h = 0, col = "black")
+  points(x <- 100*raciallycharged_scaled,
+         y <- 100*obama12_minus_obama08, pch = 19L,
+         col = "midnightblue")
+  abline(reg <- lm(y ~ x), lwd = 2L, col = "darkred")
+  legend("topright", legend = 
+           bquote(R^2 == .(sprintf("%.2f", summary(reg)$r.squared, 2L))))})
+
+```
+
+#OLS Estimates by Hand
+
+```{r ols_by_hand}
+#create the x matrix in (X'X)^-1 * X'Y
+
+#first, deal with missing data
+## omit here gives us all of the rows for which
+## at least one of the desired rows is missing.
+omit = attr(model.frame(obama_minus_kerry ~ 
+                          raciallycharged_scaled, data = race),
+            "na.action")
+xmat = model.matrix( ~ raciallycharged_scaled,
+                    #use only complete observations
+                    data = race[-omit])
+ymat = cbind(race[-omit, obama_minus_kerry])
+solve(t(xmat) %*% xmat) %*% t(xmat) %*% ymat
+
+#repeat for RHS graph
+omit = attr(model.frame(obama12_minus_obama08 ~ 
+                          raciallycharged_scaled, data = race),
+            "na.action")
+xmat = model.matrix( ~ raciallycharged_scaled,
+                    #use only complete observations
+                    data = race[-omit])
+ymat = cbind(race[-omit, obama12_minus_obama08])
+solve(t(xmat) %*% xmat) %*% t(xmat) %*% ymat
+```
+

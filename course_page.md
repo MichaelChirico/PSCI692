@@ -39,3 +39,5 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 * [Reproducing Fujiwara](Lab6_solutions)
 
 * [Testing Election Predictions: NYT vs. 538](Lab7_solutions) [Testing Widget](https://michaelchirico.shinyapps.io/Lab7_widget/)
+
+* [Reproducing Stephens-Davidowitz](Lab8_solutions)
