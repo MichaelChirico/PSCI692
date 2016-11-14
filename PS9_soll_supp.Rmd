@@ -93,6 +93,12 @@ That means $a^{*} = 1$ and $b^{*} = \frac1{\sqrt[n]{1 - p}}$, the latter of whic
 
 $$ \left[ \hat{\theta}_n, \frac1{\sqrt[n]{1 - p}} \hat{\theta}_n \right] $$
 
+Recall that the unbiased estimate for $\theta_0$ is $\frac{n+1}{n} \hat{\theta}_n$. Unlike for the symmetric confidince interval, there's no guarantee that this optimal interval contains this unbiased estimate for all $p$! This is easy to see if we set $p = 0$, in which case the interval collapses to the single point $\hat{\theta}_n$. 
+
+For $\frac{n+1}{n} \hat{\theta}_n$ to be in the interval above, we must have $\frac1{\sqrt[n]{1-p}} \geq \frac{n+1}{n}$, which is in turn equivalent to $p \geq 1 - \left( 1 + \frac1{n} \right)^{-n}$; for $n = 1$, this is $p \geq \frac12$, and as $n \rightarrow \infty$, this increases to the limiting value $p \geq 1 - \frac1{e} \approx .63$.
+
+(So in fact, for any reasonable $n$ and any common $p$ such as $.9$ or $.95$, the interval does in fact contain the unbiased estimate)
+
 # 3
 
 ## (a)
