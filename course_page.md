@@ -28,6 +28,8 @@ Welcome to the course page! I'll post recitation worksheet solutions here.
 
 * [Supplement to Solutions, PS5](PS5_692)
 
+* [Supplement to Solutions, PS9](PS9_soll_supp)
+
 ## Data Lab Material
 
 * [IPUMS Intro Lab Instructions for R](Lab2R.txt) [[solutions](Lab2_solutions)]

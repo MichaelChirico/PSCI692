@@ -20,3 +20,5 @@ rsconnect
 #some data files
 *.dta
 Lab8Data.csv
+ben_races.csv
+q1data.csv
