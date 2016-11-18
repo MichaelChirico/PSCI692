@@ -1,0 +1,83 @@
+---
+title: "Supplement to PS 10 Solutions"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+# Problem 1
+
+## (a) 
+```{r oneAI}
+library(data.table)
+library(knitr) #for table output
+
+quartet = fread("quartet.csv")
+#Preview data
+quartet
+
+#group x and y variables
+setcolorder(quartet, c(grep("x", names(quartet)),
+                       grep("y", names(quartet))))
+quartet
+```
+
+```{r oneAII, results = "asis"}
+#find mean & standard deviation
+## use sapply to return a column vector --
+##   one element for each column of quartet
+quartet[ , kable(cbind(sapply(.SD, mean), 
+                       sapply(.SD, sd)), 
+                 #kable understands and converts LaTeX
+                 col.names= c("$\\mu$", "$\\sigma$"),
+                 digits = 2L)]
+
+#Correlations
+## cor(quartet) returns ALL possible pairwise correlations
+##   in the data set. We get the x1-y1, x2-y2, x3-y3 and x4-y4
+##   entries in this by using coordinate pairs to select
+##   row (paste0('x', 1:4)) and column (paste0('y', 1:4)) names
+kable(cbind(1:4, cor(quartet)[cbind(paste0('x', 1:4), paste0('y', 1:4))]),
+      col.names = c("$j$", "$\\rho_j$"), digits = 2L, align = 'rr')
+```
+
+## (b)
+
+```{r oneB}
+xmat = cbind(Intercept = 1, X1 = quartet[ , x1])
+solve(t(xmat) %*% xmat) %*% t(xmat) %*% quartet[ , y1]
+```
+
+## (c)
+
+```{r oneC}
+quartet[ , kable(sapply(1:4, function(j) 
+  setNames(lm(get(paste0("y", j)) ~ get(paste0("x", j)))$coefficients,
+           #adding names so the row names are properly formatted
+           c("$\\beta_0$", "$\\beta_1$"))),
+  digits = 2L, col.names = paste0("$y_", 1:4, "$ vs. $x_", 1:4, "$"))]
+```
+
+## (d)
+
+```{r oneD, results = "hide"}
+quartet[ , {
+  #to ensure all plots have the same
+  #  x & y axes for easier comparison
+  xrng = range(mget(paste0("x", 1:4)))
+  yrng = range(mget(paste0("y", 1:4)))
+  #for labelling the plots
+  ttl = c("Noisy Linear Relationship",
+          "Nonlinear Relationship",
+          "Vertical Outlier",
+          "Horizontal Outlier")
+  #output plot should be 2x2
+  par(mfrow = c(2L, 2L))
+  sapply(1L:4L, function(j) {
+    x = get(xn <- paste0("x", j))
+    y = get(yn <- paste0("y", j))
+    plot(x, y, pch = 19L, xlab = xn, ylab = yn,
+         xlim = xrng, ylim = yrng, main = ttl[j])
+    abline(lm(y ~ x), col = "blue", lwd = 3L)})}]
+```
