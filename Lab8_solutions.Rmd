@@ -80,4 +80,3 @@ xmat = model.matrix( ~ raciallycharged_scaled,
 ymat = cbind(race[-omit, obama12_minus_obama08])
 solve(t(xmat) %*% xmat) %*% t(xmat) %*% ymat
 ```
-

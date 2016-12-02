@@ -1,0 +1,123 @@
+---
+title: "Voter Fraud in WI?"
+author: "Michael Chirico"
+date: "Compiled `r format(Sys.time(), '%B %d, %Y at %R')`"
+output: 
+  rmarkdown::html_document
+---
+
+# Load the data
+
+```{r load_data, results = "hide"}
+library(data.table)
+library(haven)
+
+widata = setDT(read_dta("WIdata_13.dta"))
+widata[ , electronic := as.logical(electronic)]
+#makes plotting easier to have the data
+#  ordered by mitt's share
+setorder(widata, mitt_twoparty)
+```
+
+# Reproduce Dorothy's scatter plot
+
+```{r dorothy_scatter, results = "hide"}
+widata[ , {
+  plot(mitt_twoparty, trump_twoparty, 
+       col = ifelse(electronic, "salmon", "gray"),
+       pch = 1 - electronic,
+       xlab = "Mitt Share of 2012 Vote (2-party)",
+       ylab = "Trump Share of 2016 Vote (2-party)",
+       main = paste0("Republican Performance in 2012/16\n",
+                     "Colored by Voting Machine Type"))
+  #add linear fit & confidence interval for electronic & non- subsets
+  lmelec = .SD[(electronic), lm(trump_twoparty ~ mitt_twoparty)]
+  lmnele = .SD[(!electronic), lm(trump_twoparty ~ mitt_twoparty)]
+  matplot(mitt_twoparty, 
+          predict(lmelec, newdata = .SD, interval = "confidence"),
+          add = TRUE, type = "l", lwd = c(3L, 1L, 1L),
+          lty = c(1L, 2L, 2L), col = "red")
+  matplot(mitt_twoparty,
+          predict(lmnele, newdata = .SD, interval = "confidence"),
+          add = TRUE, type = "l", lwd = c(3L, 1L, 1L),
+          lty = c(1L, 2L, 2L), col = "black")
+  }]
+```
+
+# Some hypothesized correlates
+
+```{r correlates, results = "hide"}
+#Compare, in counties where some towns were
+#  and some towns weren't electronic,
+#  the gains made by Trump from 2012 to 2016,
+#  broken down by voting machine type
+
+## some counties only have one type of machine 
+##   represented, so there's no meaningful 
+##   benchmark; exclude such towns
+widata[ , if(uniqueN(electronic) == 2L) 
+  #among towns within counties with both types represented,
+  #  find the average Trump effect by machine type
+  .SD[ , mean(trump_twoparty - mitt_twoparty, na.rm = TRUE), 
+       keyby = electronic], 
+  #reshape the data for easier passing to the barplot function
+  by = county][ , dcast(.SD, electronic ~ county, value.var = "V1")
+                ][ , barplot(as.matrix(.SD[ , !"electronic"]),
+                             beside = TRUE, col = c("gray", "salmon"),
+                             cex.names = .6, las = 2L, ylab = "%Trump - %Romney",
+                             main = "County-level Change in Trump Support")]
+
+#Compare total voter registration with Trump Effect,
+#  and color by machine type (separation here is almost perfect)
+
+##  Take logs to mitigate outlier effects since populations
+##    tend to be skew-distributed (skewed by large cities)
+widata[ , plot(log(registered_voters2016), trump_twoparty - mitt_twoparty,
+               xlab = "Registered Voters in 2016 (Log)",
+               ylab = "Trump Effect (%2016 - %2012)",
+               main = "Correlations among Registration, Trump Effect, Machine Type",
+               col = ifelse(electronic, "salmon", "gray"),
+               pch = 1 - electronic)]
+
+#Compare 2016 election turnout with the Trump Effect,
+#  again coloring by machine type
+widata[ , plot(turnout2016, trump_twoparty - mitt_twoparty,
+               xlab = "Registered Voters in 2016 (Log)",
+               ylab = "Trump Effect (%2016 - %2012)",
+               main = "Correlations among Registration, Trump Effect, Machine Type",
+               col = ifelse(electronic, "salmon", "gray"),
+               pch = 1 - electronic)]
+```
+
+More concisely, we can examine the scatterplot matrix:
+
+```{r scatterplot_matrix, results = "hide"}
+## subset only to the columns of interest; use
+##   descriptive names for each column since they'll
+##   be used directly in the output
+widata[ , .("Trump Effect" = trump_twoparty - mitt_twoparty, 
+            "Log 2016 Registration" = log(registered_voters2016), 
+            "2016 Turnout" = turnout2016)
+        ][ , pairs(.SD, col = ifelse(widata$electronic, "salmon", "gray"),
+                   pch = 1 - widata$electronic)]
+```
+
+# Turnout Non-Linearity
+
+```{r turnout, results = "hide"}
+widata[complete.cases(electronic, trump_twoparty, mitt_twoparty,
+                      registered_voters2016, county, turnout2016), 
+       .(electronic,
+         trump_eff_prj = 
+           lm(I(trump_twoparty - mitt_twoparty) ~ 
+                log(registered_voters2016) + county)$residuals,
+         turnout_prj =
+           lm(turnout2016 ~ log(registered_voters2016) + county)$residuals)
+       ][ , plot(turnout_prj, trump_eff_prj, 
+                 col = ifelse(electronic, "salmon", "gray"),
+                 xlab = "Turnout (Conditional)", 
+                 ylab = "Trump Effect (Conditional)",
+                 main = paste0("Trump Effect vs. Turnout\n",
+                               "Conditional on Registration, County"))]
+```
+
