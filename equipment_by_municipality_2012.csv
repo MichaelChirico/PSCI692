@@ -1,0 +1,1851 @@
+county,munic_type,municipality,system,vendor,equipment,equipment_acc
+ADAMS,CITY,ADAMS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ADAMS,TOWN,ADAMS,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,BIG FLATS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,COLBURN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,DELL PRAIRIE,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,EASTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,JACKSON,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,LEOLA,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,MONROE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,NEW CHESTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,NEW HAVEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,TOWN,PRESTON,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,QUINCY,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,RICHFIELD,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,ROME,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ADAMS,TOWN,SPRINGVILLE,Paper Ballot,,,Vote-Pad
+ADAMS,TOWN,STRONGS PRAIRIE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ADAMS,VILLAGE,FRIENDSHIP,Paper Ballot,,,Vote-Pad
+ASHLAND,CITY,MELLEN,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,AGENDA,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,ASHLAND,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,CHIPPEWA,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,GINGLES,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,GORDON,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,JACOBS,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,LA POINTE,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,MARENGO,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,MORSE,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,PEEKSVILLE,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,SANBORN,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,SHANAGOLDEN,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,TOWN,WHITE RIVER,Paper Ballot,,,ES&S AutoMARK
+ASHLAND,VILLAGE,BUTTERNUT,Paper Ballot,,,ES&S AutoMARK
+ASHLAND/BAYFIELD,CITY,ASHLAND,Optical Scan,ES&S,M100,ES&S AutoMARK
+BARRON,CITY,BARRON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,CITY,CHETEK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,CITY,CUMBERLAND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,CITY,RICE LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,ALMENA,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,ARLAND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,BARRON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,BEAR LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,CEDAR LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,CHETEK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,CLINTON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,CRYSTAL LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,CUMBERLAND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,DALLAS,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,DOVRE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,DOYLE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,LAKELAND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,MAPLE GROVE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,MAPLE PLAIN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,OAK GROVE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,PRAIRIE FARM,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,PRAIRIE LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,RICE LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,SIOUX CREEK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,STANFOLD,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,STANLEY,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,SUMNER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,TURTLE LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,TOWN,VANCE CREEK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,VILLAGE,ALMENA,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,VILLAGE,CAMERON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,VILLAGE,DALLAS,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,VILLAGE,HAUGEN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON,VILLAGE,PRAIRIE FARM,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BARRON/POLK,VILLAGE,TURTLE LAKE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+BAYFIELD,CITY,BAYFIELD,Optical Scan,ES&S,M100,ES&S AutoMARK
+BAYFIELD,CITY,WASHBURN,Optical Scan,ES&S,M100,ES&S AutoMARK
+BAYFIELD,TOWN,BARKSDALE,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,BARNES,Optical Scan,ES&S,M100,ES&S AutoMARK
+BAYFIELD,TOWN,BAYFIELD,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,BAYVIEW,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,BELL,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,CABLE,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,CLOVER,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,DELTA,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,DRUMMOND,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,EILEEN,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,GRAND VIEW,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,HUGHES,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,IRON RIVER,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,KELLY,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,KEYSTONE,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,LINCOLN,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,MASON,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,NAMAKAGON,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,ORIENTA,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,OULU,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,PILSEN,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,PORT WING,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,RUSSELL,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,TRIPP,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,TOWN,WASHBURN,Paper Ballot,,,ES&S AutoMARK
+BAYFIELD,VILLAGE,MASON,Paper Ballot,,,ES&S AutoMARK
+BROWN,CITY,DE PERE,Optical Scan,ES&S,Eagle w/ modem and,ES&S AutoMARK
+BROWN,CITY,GREEN BAY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+BROWN,TOWN,EATON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,GLENMORE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,GREEN BAY,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,HOLLAND,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,HUMBOLDT,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,LAWRENCE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,LEDGEVIEW,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,MORRISON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,NEW DENMARK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,PITTSFIELD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,ROCKLAND,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,SCOTT,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,TOWN,WRIGHTSTOWN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,VILLAGE,ALLOUEZ,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+BROWN,VILLAGE,ASHWAUBENON,Optical Scan,ES&S,Eagle (no modem and,ES&S AutoMARK
+BROWN,VILLAGE,BELLEVUE,Optical Scan,ES&S,Eagle (no modem & w/,ES&S AutoMARK
+BROWN,VILLAGE,DENMARK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,VILLAGE,HOBART,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN,VILLAGE,SUAMICO,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN/OCONTO/SHA,VILLAGE,PULASKI,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BROWN/OUTAGAMIE,VILLAGE,HOWARD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+BUFFALO,CITY,ALMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,CITY,BUFFALO CITY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,CITY,FOUNTAIN CITY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,CITY,MONDOVI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,ALMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,BELVIDERE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,BUFFALO,Paper Ballot,,,Vote-Pad
+BUFFALO,TOWN,CANTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,CROSS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,DOVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,GILMANTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,GLENCOE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,MAXVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,MILTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,MODENA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,MONDOVI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,MONTANA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,NAPLES,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,NELSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,TOWN,WAUMANDEE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,VILLAGE,COCHRANE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BUFFALO,VILLAGE,NELSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,ANDERSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,BLAINE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,DANIELS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,DEWEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,GRANTSBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,JACKSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,LA FOLLETTE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,MEENON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,OAKLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,ROOSEVELT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,RUSK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,SAND LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,SCOTT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,SIREN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,SWISS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,TRADE LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,UNION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,WEBB LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,WEST MARSHLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,TOWN,WOOD RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,VILLAGE,GRANTSBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,VILLAGE,SIREN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+BURNETT,VILLAGE,WEBSTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CALUMET,CITY,BRILLION,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET,CITY,CHILTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET,CITY,NEW HOLSTEIN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET,TOWN,BRILLION,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,BROTHERTOWN,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,CHARLESTOWN,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,CHILTON,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,HARRISON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET,TOWN,NEW HOLSTEIN,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,RANTOUL,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,STOCKBRIDGE,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,TOWN,WOODVILLE,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,VILLAGE,HILBERT,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,VILLAGE,POTTER,Paper Ballot,,,Premier AccuVote TSX
+CALUMET,VILLAGE,SHERWOOD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET,VILLAGE,STOCKBRIDGE,Paper Ballot,,,Premier AccuVote TSX
+CALUMET/MANITOWO,CITY,KIEL,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+CALUMET/WINNEBAGO,CITY,MENASHA,Optical Scan,Premier,AccuVote-ES 2000 Premier AccuVote TSX,AccuVote-ES 2000 Premier AccuVote TSX
+CALUMET/WINNEBAGO,CITY,APPLETON,Optical Scan,ES&S,M100 ES&S AutoMARK,M100 ES&S AutoMARK
+CHIPPEWA,CITY,BLOOMER,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,CITY,CHIPPEWA FALLS,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,CITY,CORNELL,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,ANSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,ARTHUR,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,AUBURN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,BIRCH CREEK,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,BLOOMER,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,CLEVELAND,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,COLBURN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,COOKS VALLEY,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,DELMAR,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,EAGLE POINT,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,EDSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,ESTELLA,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,GOETZ,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,HALLIE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,HOWARD,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,LAFAYETTE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,LAKE HOLCOMBE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,RUBY,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,SAMPSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,SIGEL,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,TILDEN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,WHEATON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,TOWN,WOODMOHR,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,VILLAGE,BOYD,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,VILLAGE,CADOTT,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA,VILLAGE,LAKE HALLIE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA/BARRON,VILLAGE,NEW AUBURN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CHIPPEWA/CLARK,CITY,STANLEY,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+CLARK,CITY,GREENWOOD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,CITY,LOYAL,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,CITY,NEILLSVILLE,Optical Scan,ES&S,M100 (no modem),ES&S AutoMARK
+CLARK,CITY,OWEN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,CITY,THORP,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,BEAVER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,BUTLER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,COLBY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,DEWHURST,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,EATON,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,FOSTER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,FREMONT,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,GRANT,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,GREEN GROVE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,HENDREN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,HEWETT,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,HIXON,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,HOARD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,LEVIS,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,LONGWOOD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,LOYAL,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,LYNN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,MAYVILLE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,MEAD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,MENTOR,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,PINE VALLEY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,RESEBURG,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,SEIF,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,SHERMAN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,SHERWOOD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,THORP,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,UNITY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,WARNER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,WASHBURN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,WESTON,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,WITHEE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,WORDEN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,TOWN,YORK,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,VILLAGE,CURTISS,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,VILLAGE,GRANTON,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK,VILLAGE,WITHEE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK/MARATHON,CITY,ABBOTSFORD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK/MARATHON,CITY,COLBY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+CLARK/MARATHON,VILLAGE,UNITY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+COLUMBIA,CITY,LODI,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,CITY,PORTAGE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,ARLINGTON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,CALEDONIA,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,COLUMBUS,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,COURTLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,DEKORRA,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,FORT WINNEBAGO,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,FOUNTAIN PRAIRIE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,HAMPDEN,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,LEEDS,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,LEWISTON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,LODI,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,LOWVILLE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,MARCELLON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,NEWPORT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,OTSEGO,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,PACIFIC,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,RANDOLPH,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,SCOTT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,SPRINGVALE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,WEST POINT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,TOWN,WYOCENA,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,ARLINGTON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,CAMBRIA,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,DOYLESTOWN,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,FALL RIVER,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,FRIESLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,PARDEEVILLE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,POYNETTE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,RIO,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA,VILLAGE,WYOCENA,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA/ADAMS/SA,CITY,WISCONSIN DELLS,Optical Scan,ES&S,M100,ES&S AutoMARK
+COLUMBIA/DODGE,CITY,COLUMBUS,Optical Scan,ES&S,M 100,ES&S AutoMARK
+COLUMBIA/DODGE,VILLAGE,RANDOLPH,Optical Scan,ES&S,M 100,ES&S AutoMARK
+CRAWFORD,CITY,PRAIRIE DU CHIEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,BRIDGEPORT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,CLAYTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,EASTMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,FREEMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,HANEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,MARIETTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,PRAIRIE DU CHIEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,SCOTT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,SENECA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,UTICA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,TOWN,WAUZEKA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,BELL CENTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,EASTMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,FERRYVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,GAYS MILLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,LYNXVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,MT. STERLING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,SOLDIERS GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,STEUBEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD,VILLAGE,WAUZEKA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+CRAWFORD/VERNON,VILLAGE,DE SOTO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DANE,CITY,FITCHBURG,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+DANE,CITY,MADISON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,CITY,MIDDLETON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,CITY,MONONA,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+DANE,CITY,STOUGHTON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,CITY,SUN PRAIRIE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,CITY,VERONA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,ALBION,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,BERRY,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,BLACK EARTH,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,BLOOMING GROVE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,BLUE MOUNDS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,BRISTOL,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,BURKE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,CHRISTIANA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,COTTAGE GROVE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,CROSS PLAINS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,DANE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,DEERFIELD,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,DUNKIRK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,DUNN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,MADISON,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+DANE,TOWN,MAZOMANIE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,MEDINA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,MIDDLETON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,MONTROSE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,OREGON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,PERRY,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,PLEASANT SPRINGS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,PRIMROSE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,ROXBURY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,RUTLAND,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,SPRINGDALE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,SPRINGFIELD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,SUN PRAIRIE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,VERMONT,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,VERONA,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,TOWN,VIENNA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,WESTPORT,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,WINDSOR,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,TOWN,YORK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,BLACK EARTH,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,BLUE MOUNDS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,COTTAGE GROVE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,VILLAGE,CROSS PLAINS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,DANE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,DEERFIELD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,DEFOREST,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,MAPLE BLUFF,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,VILLAGE,MARSHALL,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,MAZOMANIE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,MCFARLAND,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,MT HOREB,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,OREGON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE,VILLAGE,ROCKDALE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,VILLAGE,SHOREWOOD HILLS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+DANE,VILLAGE,WAUNAKEE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE/GREEN,VILLAGE,BELLEVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE/GREEN,VILLAGE,BROOKLYN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DANE/JEFFERSON,VILLAGE,CAMBRIDGE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+DODGE,CITY,BEAVER DAM,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,CITY,FOX LAKE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,CITY,HORICON,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,CITY,JUNEAU,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,CITY,MAYVILLE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,ASHIPPUN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,BEAVER DAM,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,BURNETT,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,CALAMUS,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,CHESTER,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,CLYMAN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,ELBA,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,EMMET,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,FOX LAKE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,HERMAN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,HUBBARD,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,HUSTISFORD,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,LEBANON,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,LEROY,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,LOMIRA,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,LOWELL,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,OAK GROVE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,PORTLAND,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,RUBICON,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,SHIELDS,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,THERESA,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,TRENTON,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,WESTFORD,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,TOWN,WILLIAMSTOWN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,NEOSHO,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,BROWNSVILLE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,CLYMAN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,HUSTISFORD,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,IRON RIDGE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,KEKOSKEE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,LOMIRA,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,LOWELL,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,REESEVILLE,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE,VILLAGE,THERESA,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE/FOND DU LAC,CITY,WAUPUN,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DODGE/WASHINGTON,CITY,HARTFORD,Optical Scan,Premier,Accuvote- OS 1.96.6,Premier AccuVote TSX
+DOOR,CITY,STURGEON BAY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,BAILEYS HARBOR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,BRUSSELS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,CLAY BANKS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,EGG HARBOR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,FORESTVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,GARDNER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,GIBRALTAR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,JACKSONPORT,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,LIBERTY GROVE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,NASEWAUPEE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,SEVASTOPOL,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,STURGEON BAY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,UNION,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,TOWN,WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,VILLAGE,EGG HARBOR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,VILLAGE,EPHRAIM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,VILLAGE,FORESTVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOOR,VILLAGE,SISTER BAY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+DOUGLAS,CITY,SUPERIOR,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,AMNICON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,BENNETT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,BRULE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,CLOVERLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,DAIRYLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,GORDON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,HAWTHORNE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,HIGHLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,LAKESIDE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,MAPLE,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,OAKLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,PARKLAND,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,SOLON SPRINGS,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,SUMMIT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,SUPERIOR,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,TOWN,WASCOTT,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,VILLAGE,LAKE NEBAGAMON,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,VILLAGE,OLIVER,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,VILLAGE,POPLAR,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,VILLAGE,SOLON SPRINGS,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DOUGLAS,VILLAGE,SUPERIOR,Optical Scan,ES&S,M 100,ES&S AutoMARK
+DUNN,CITY,MENOMONIE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,COLFAX,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,DUNN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,EAU GALLE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,ELK MOUND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,GRANT,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,HAY RIVER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,LUCAS,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,MENOMONIE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,NEW HAVEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,OTTER CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,PERU,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,RED CEDAR,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,ROCK CREEK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,SAND CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,SHERIDAN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,SHERMAN,Paper Ballot,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,SPRING BROOK,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,STANTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,TAINTER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,TIFFANY,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,WESTON,Optical Scan,Sequioa,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,TOWN,WILSON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,BOYCEVILLE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,COLFAX,Optical Scan,Sequioa,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,DOWNING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,ELK MOUND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,KNAPP,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,RIDGELAND,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+DUNN,VILLAGE,WHEELER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,CITY,ALTOONA,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,CITY,AUGUSTA,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,BRIDGE CREEK,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,BRUNSWICK,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,CLEAR CREEK,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,DRAMMEN,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,FAIRCHILD,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,LINCOLN,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,LUDINGTON,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,OTTER CREEK,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,PLEASANT VALLEY,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,SEYMOUR,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,UNION,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,WASHINGTON,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,TOWN,WILSON,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,VILLAGE,FAIRCHILD,Optical Scan,Command Central,Eagle (tally at CC office),SEQ-AVC Edge II 5.0.24
+EAU CLAIRE,VILLAGE,FALL CREEK,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+EAU,CITY,EAU CLAIRE,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,AURORA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,COMMONWEALTH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,FENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,FERN,Paper Ballot,,,Populex
+FLORENCE,TOWN,FLORENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,HOMESTEAD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,LONG LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FLORENCE,TOWN,TIPLER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,CITY,FOND DU LAC,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,CITY,RIPON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,ALTO,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,ASHFORD,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,AUBURN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,BYRON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,CALUMET,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,EDEN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,ELDORADO,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,EMPIRE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,FOND DU LAC,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,FOREST,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,FRIENDSHIP,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,LAMARTINE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,MARSHFIELD,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,METOMEN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,OAKFIELD,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,OSCEOLA,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,RIPON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,ROSENDALE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,SPRINGVALE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,TAYCHEEDAH,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,TOWN,WAUPUN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,BRANDON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,CAMPBELLSPORT,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,EDEN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,FAIRWATER,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,MOUNT CALVARY,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,NORTH FOND DU LAC,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,OAKFIELD,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,ROSENDALE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOND DU LAC,VILLAGE,ST. CLOUD,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+FOREST,CITY,CRANDON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,ALVIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,ARGONNE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,ARMSTRONG CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,BLACKWELL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,CASWELL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,CRANDON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,FREEDOM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,HILES,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,LAONA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,NASHVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,POPPLE RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,ROSS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+FOREST,TOWN,WABENO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,CITY,BOSCOBEL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,CITY,FENNIMORE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,CITY,LANCASTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,CITY,PLATTEVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+GRANT,TOWN,BEETOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,BLOOMINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,BOSCOBEL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,CASSVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,CASTLE ROCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,CLIFTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,ELLENBORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,FENNIMORE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,GLEN HAVEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,HARRISON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,HAZEL GREEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,HICKORY GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,JAMESTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,LIBERTY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,LIMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,LITTLE GRANT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,MARION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,MILLVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,MOUNT HOPE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,MOUNT IDA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,NORTH LANCASTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,PARIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,PATCH GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,PLATTEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,POTOSI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,SMELSER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,SOUTH LANCASTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,WATERLOO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,WATTERSTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,WINGVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,WOODMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,TOWN,WYALUSING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,BAGLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,BLOOMINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,BLUE RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,CASSVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,DICKEYVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,MOUNT HOPE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,PATCH GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,POTOSI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,TENNYSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT,VILLAGE,WOODMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT/IOWA,VILLAGE,LIVINGSTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT/IOWA,VILLAGE,MONTFORT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT/IOWA,VILLAGE,MUSCODA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT/LAFAYETTE,CITY,CUBA CITY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GRANT/LAFAYETTE,VILLAGE,HAZEL GREEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN,CITY,MONROE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,ADAMS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,ALBANY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,BROOKLYN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,CADIZ,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,CLARNO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,DECATUR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,EXETER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,JEFFERSON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,JORDAN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,MONROE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,MOUNT PLEASANT,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,NEW GLARUS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,SPRING GROVE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,SYLVESTER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,TOWN,YORK,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,VILLAGE,ALBANY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,VILLAGE,BROWNTOWN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,VILLAGE,MONTICELLO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN,VILLAGE,NEW GLARUS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+GREEN LAKE,CITY,GREEN LAKE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,CITY,MARKESAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,CITY,PRINCETON,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,BERLIN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,BROOKLYN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,GREEN LAKE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,KINGSTON,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,MACKFORD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,MANCHESTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,MARQUETTE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,PRINCETON,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,SENECA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,TOWN,ST. MARIE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,VILLAGE,KINGSTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN LAKE,VILLAGE,MARQUETTE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+GREEN,CITY,BERLIN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+GREEN/ROCK,CITY,BRODHEAD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+IOWA,CITY,DODGEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,CITY,MINERAL POINT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,ARENA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,BRIGHAM,Paper Ballot,,,ES&S AutoMARK
+IOWA,TOWN,CLYDE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,DODGEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,EDEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,HIGHLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,LINDEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,MIFFLIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,MINERAL POINT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,MOSCOW,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,PULASKI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,RIDGEWAY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,WALDWICK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,TOWN,WYOMING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,ARENA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,AVOCA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,BARNEVELD,Paper Ballot,,,ES&S AutoMARK
+IOWA,VILLAGE,COBB,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,HIGHLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,HOLLANDALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,LINDEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,REWEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA,VILLAGE,RIDGEWAY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IOWA/LAFAYETTE,VILLAGE,BLANCHARDVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,CITY,HURLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,CITY,MONTREAL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,ANDERSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,CAREY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,GURNEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,KIMBALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,KNIGHT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,MERCER,Paper Ballot,,,Vote-Pad
+IRON,TOWN,OMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,PENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,SAXON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+IRON,TOWN,SHERMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,CITY,BLACK RIVER FALLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,ADAMS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,ALBION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,ALMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,BEAR BLUFF,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,BROCKWAY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,CITY POINT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,CLEVELAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,CURRAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,FRANKLIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,GARDEN VALLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,GARFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,HIXTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,IRVING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,KNAPP,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,KOMENSKY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,MANCHESTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,MELROSE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,MILLSTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,NORTH BEND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,NORTHFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,TOWN,SPRINGFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,VILLAGE,ALMA CENTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,VILLAGE,HIXTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,VILLAGE,MELROSE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,VILLAGE,MERRILLAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JACKSON,VILLAGE,TAYLOR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JEFFERSON,CITY,FORT ATKINSON,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+JEFFERSON,CITY,JEFFERSON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,CITY,LAKE MILLS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,CITY,WATERLOO,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,AZTALAN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,COLD SPRING,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,CONCORD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,FARMINGTON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,HEBRON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,IXONIA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,JEFFERSON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,KOSHKONONG,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,LAKE MILLS,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,MILFORD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,OAKLAND,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+JEFFERSON,TOWN,PALMYRA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,SULLIVAN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,SUMNER,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,WATERLOO,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,TOWN,WATERTOWN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,VILLAGE,JOHNSON CREEK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,VILLAGE,PALMYRA,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON,VILLAGE,SULLIVAN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON/DODGE,CITY,WATERTOWN,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+JEFFERSON/WALWOR,CITY,WHITEWATER,Optical Scan,ES&S,Eagle,Premier AccuVote TSX
+JUNEAU,CITY,ELROY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,CITY,MAUSTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+JUNEAU,CITY,NEW LISBON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,ARMENIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,CLEARFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,CUTLER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,FINLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,FOUNTAIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,GERMANTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,KILDARE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,KINGSTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,LEMONWEIR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,LINDINA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,LISBON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,LYNDON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,MARION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,NECEDAH,Direct Recording Electronic,Sequoia,AVC Edge II 5.0.2.4,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,ORANGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,PLYMOUTH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,SEVEN MILE CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,SUMMIT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,TOWN,WONEWOC,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,CAMP DOUGLAS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,HUSTLER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,LYNDON STATION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,NECEDAH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,UNION CENTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+JUNEAU,VILLAGE,WONEWOC,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+KENOSHA,CITY,KENOSHA,Optical Scan,Premier,Accuvote-OS 1.96.6,Premier AccuVote TSX
+KENOSHA,TOWN,BRIGHTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,BRISTOL,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,PARIS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,RANDALL,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,SALEM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,SOMERS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,TOWN,WHEATLAND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,VILLAGE,PADDOCK LAKE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,VILLAGE,PLEASANT PRAIRIE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,VILLAGE,SILVER LAKE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA,VILLAGE,TWIN LAKES,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KENOSHA/WALWORT,VILLAGE,GENOA CITY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+KEWAUNEE,CITY,ALGOMA,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,CITY,KEWAUNEE,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,AHNAPEE,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,CARLTON,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,CASCO,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,FRANKLIN,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,LINCOLN,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,LUXEMBURG,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,MONTPELIER,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,PIERCE,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,RED RIVER,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,TOWN,WEST KEWAUNEE,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,VILLAGE,CASCO,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+KEWAUNEE,VILLAGE,LUXEMBURG,Optical Scan,ES&S,150 Central Count,ES&S AutoMARK
+LA CROSSE,CITY,LA CROSSE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,CITY,ONALASKA,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,BANGOR,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,BARRE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,BURNS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,CAMPBELL,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,FARMINGTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,GREENFIELD,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,HAMILTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,HOLLAND,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,MEDARY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,ONALASKA,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,SHELBY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,TOWN,WASHINGTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,VILLAGE,BANGOR,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,VILLAGE,HOLMEN,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,VILLAGE,ROCKLAND,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LA CROSSE,VILLAGE,WEST SALEM,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LAFAYETTE,CITY,DARLINGTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+LAFAYETTE,CITY,SHULLSBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,ARGYLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,BELMONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,BENTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,BLANCHARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,DARLINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,ELK GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,FAYETTE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,GRATIOT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,KENDALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,LAMONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,MONTICELLO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,NEW DIGGINGS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,SEYMOUR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,SHULLSBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,WAYNE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,WHITE OAK SPRINGS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,WILLOW SPRINGS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,TOWN,WIOTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,VILLAGE,ARGYLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,VILLAGE,BELMONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,VILLAGE,BENTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,VILLAGE,GRATIOT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LAFAYETTE,VILLAGE,SOUTH WAYNE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,CITY,ANTIGO,Optical Scan,ES&S,OpTech 2,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,ACKLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,AINSWORTH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,ANTIGO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,ELCHO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,EVERGREEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,LANGLADE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,NEVA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,NORWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,PARRISH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,PECK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,POLAR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,PRICE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,ROLLING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,SUMMIT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,UPHAM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,VILAS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,TOWN,WOLF RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LANGLADE,VILLAGE,WHITE LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+LINCOLN,CITY,MERRILL,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,CITY,TOMAHAWK,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,BIRCH,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,BRADLEY,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,CORNING,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,HARDING,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,HARRISON,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,KING,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,MERRILL,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,PINE RIVER,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,ROCK FALLS,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,RUSSELL,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,SCHLEY,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,SCOTT,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,SKANAWAN,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,SOMO,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,TOMAHAWK,Optical Scan,ES&S,DS200,ES&S AutoMARK
+LINCOLN,TOWN,WILSON,Optical Scan,ES&S,DS200,ES&S AutoMARK
+MANITOWOC,CITY,MANITOWOC,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MANITOWOC,CITY,TWO RIVERS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MANITOWOC,TOWN,CATO,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,CENTERVILLE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,COOPERSTOWN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,EATON,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,FRANKLIN,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,GIBSON,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,KOSSUTH,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,LIBERTY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,MANITOWOC,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,MANITOWOC RAPIDS,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,MAPLE GROVE,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,MEEME,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,MISHICOT,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,TOWN,NEWTON,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,ROCKLAND,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,SCHLESWIG,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,TWO CREEKS,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,TOWN,TWO RIVERS,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,VILLAGE,CLEVELAND,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,VILLAGE,FRANCIS CREEK,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,VILLAGE,KELLNERSVILLE,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,VILLAGE,MARIBEL,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,VILLAGE,MISHICOT,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,VILLAGE,REEDSVILLE,Paper Ballot,,,ES&S AutoMARK
+MANITOWOC,VILLAGE,ST. NAZIANZ,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,VILLAGE,VALDERS,Optical Scan,ES&S,M100,ES&S AutoMARK
+MANITOWOC,VILLAGE,WHITELAW,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,CITY,MOSINEE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,CITY,SCHOFIELD,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,CITY,WAUSAU,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,BERGEN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,BERLIN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,BERN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,BEVENT,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,BRIGHTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,CASSEL,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,CLEVELAND,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,DAY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,EASTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,EAU PLEINE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,ELDERON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,EMMET,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,FRANKFORT,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,FRANZEN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,GREEN VALLEY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,GUENTHER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HALSEY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HAMBURG,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HARRISON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HEWITT,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HOLTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,HULL,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,JOHNSON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,KNOWLTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,MAINE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,MARATHON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,MCMILLAN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,MOSINEE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,NORRIE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,PLOVER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,REID,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,RIB FALLS,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,RIB MOUNTAIN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,RIETBROCK,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,RINGLE,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,SPENCER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,STETTIN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,TEXAS,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,WAUSAU,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,WESTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,TOWN,WIEN,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,ATHENS,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,BROKAW,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,EDGAR,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,ELDERON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,FENWOOD,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,HATLEY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,KRONENWETTER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,MARATHON CITY,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,ROTHSCHILD,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,SPENCER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,STRATFORD,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON,VILLAGE,WESTON,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON/CLARK,VILLAGE,DORCHESTER,Optical Scan,ES&S,M100,ES&S AutoMARK
+MARATHON/SHAWAN,VILLAGE,BIRNAMWOOD,Optical Scan,ES&S,M100,SEQ-AVC Edge II 5.0.24
+MARINETTE,CITY,MARINETTE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MARINETTE,CITY,NIAGARA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,CITY,PESHTIGO,Direct Recording Electronic,Sequoia,AVC Advantage,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,AMBERG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,ATHELSTANE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,BEAVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,BEECHER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,DUNBAR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,GOODMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,GROVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,MIDDLE INLET,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,NIAGARA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,PEMBINE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,PESHTIGO,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,PORTERFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,POUND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,SILVER CLIFF,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,STEPHENSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,WAGNER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,TOWN,WAUSAUKEE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,VILLAGE,COLEMAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,VILLAGE,CRIVITZ,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,VILLAGE,POUND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARINETTE,VILLAGE,WAUSAUKEE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,CITY,MONTELLO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,BUFFALO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,CRYSTAL LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,DOUGLAS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,HARRIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,MECAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,MONTELLO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,MOUNDVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,NESHKORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,NEWTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,OXFORD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,PACKWAUKEE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,SHIELDS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,SPRINGFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,TOWN,WESTFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,VILLAGE,ENDEAVOR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,VILLAGE,NESHKORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,VILLAGE,OXFORD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MARQUETTE,VILLAGE,WESTFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MENOMINEE,TOWN,MENOMINEE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MILWAUKEE,CITY,CUDAHY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MILWAUKEE,CITY,FRANKLIN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,GLENDALE,Optical Scan,ES&S,OpTech 3P,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,GREENFIELD,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+MILWAUKEE,CITY,OAK CREEK,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,SOUTH MILWAUKEE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,ST. FRANCIS,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,WAUWATOSA,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,CITY,WEST ALLIS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MILWAUKEE,VILLAGE,BROWN DEER,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+MILWAUKEE,VILLAGE,FOX POINT,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,VILLAGE,GREENDALE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,VILLAGE,HALES CORNERS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MILWAUKEE,VILLAGE,RIVER HILLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,VILLAGE,SHOREWOOD,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MILWAUKEE,VILLAGE,WEST MILWAUKEE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+MILWAUKEE,VILLAGE,WHITEFISH BAY,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+MILWAUKEE/WASHING,CITY,MILWAUKEE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+MONROE,CITY,SPARTA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MONROE,CITY,TOMAH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,ADRIAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,ANGELO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,BYRON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,CLIFTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,GLENDALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,GRANT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,GREENFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,JEFFERSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,LA GRANGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,LAFAYETTE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,LEON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,LITTLE FALLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,NEW LYME,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,OAKDALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,PORTLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,RIDGEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,SCOTT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,SHELDON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,SPARTA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,TOMAH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,WELLINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,WELLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,TOWN,WILTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,CASHTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,KENDALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,MELVINA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,NORWALK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,OAKDALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,WARRENS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,WILTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+MONROE,VILLAGE,WYEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,CITY,GILLETT,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,CITY,OCONTO,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,CITY,OCONTO FALLS,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,ABRAMS,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,BAGLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,BRAZEAU,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,BREED,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,CHASE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,DOTY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,GILLETT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,HOW,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,LAKEWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,LENA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,LITTLE RIVER,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,LITTLE SUAMICO,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,MAPLE VALLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,MORGAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,MOUNTAIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,OCONTO,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,OCONTO FALLS,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,PENSAUKEE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,RIVERVIEW,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,SPRUCE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,STILES,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,TOWNSEND,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+OCONTO,TOWN,UNDERHILL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,VILLAGE,LENA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OCONTO,VILLAGE,SURING,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+ONEIDA,CITY,RHINELANDER,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,CASSIAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,CRESCENT,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,ENTERPRISE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,HAZELHURST,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,LAKE TOMAHAWK,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,LITTLE RICE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,LYNNE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,MINOCQUA,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,MONICO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,NEWBOLD,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,NOKOMIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,PELICAN,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,PIEHL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,PINE LAKE,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,SCHOEPKE,Paper Ballot,,,ES&S AutoMARK
+ONEIDA,TOWN,STELLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,SUGAR CAMP,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ONEIDA,TOWN,THREE LAKES,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+ONEIDA,TOWN,WOODBORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ONEIDA,TOWN,WOODRUFF,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+OUTAGAMIE,CITY,KAUKAUNA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,CITY,SEYMOUR,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,BLACK CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,BOVINA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,BUCHANAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,CENTER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,CICERO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,DALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,DEER CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,ELLINGTON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,FREEDOM,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,GRAND CHUTE,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,GREENVILLE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,HORTONIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,KAUKAUNA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,LIBERTY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,MAINE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,MAPLE CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,ONEIDA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,OSBORN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,SEYMOUR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,TOWN,VANDENBROEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,BEAR CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,BLACK CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,COMBINED LOCKS,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,HORTONVILLE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,KIMBERLY,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,LITTLE CHUTE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,NICHOLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE,VILLAGE,SHIOCTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+OUTAGAMIE/BROWN,VILLAGE,WRIGHTSTOWN,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+OZAUKEE,CITY,CEDARBURG,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,CITY,MEQUON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,CITY,PORT WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,BELGIUM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,CEDARBURG,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,FREDONIA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,GRAFTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,PORT WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,TOWN,SAUKVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,VILLAGE,BELGIUM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,VILLAGE,FREDONIA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,VILLAGE,GRAFTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,VILLAGE,SAUKVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE,VILLAGE,THIENSVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+OZAUKEE/MILWAUKEE,VILLAGE,BAYSIDE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+OZAUKEE/WASHINGT,VILLAGE,NEWBURG,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+PEPIN,CITY,DURAND,Direct Recording Electronic,Sequoia,AVC Edge II,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,ALBANY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,DURAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,FRANKFORT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,LIMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,PEPIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,STOCKHOLM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,WATERVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,TOWN,WAUBEEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,VILLAGE,PEPIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PEPIN,VILLAGE,STOCKHOLM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,CITY,PRESCOTT,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,CLIFTON,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,DIAMOND BLUFF,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,EL PASO,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,ELLSWORTH,Optical Scan,Sequoia,Insight,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,GILMAN,Direct Recording Electronic,Sequoia,AVC Edge II,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,HARTLAND,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,ISABELLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,MAIDEN ROCK,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,MARTELL,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,OAK GROVE,Optical Scan,Sequoia,Insight,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,RIVER FALLS,Optical Scan,Sequoia,Insight,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,ROCK ELM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,SALEM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,SPRING LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,TRENTON,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,TRIMBELLE,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,TOWN,UNION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,VILLAGE,BAY CITY,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,VILLAGE,ELLSWORTH,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE,VILLAGE,ELMWOOD,Direct Recording Electronic,Sequoia,AVC Edge II,SEQ-AVC Edge II 5.0.24
+PIERCE,VILLAGE,MAIDEN ROCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PIERCE,VILLAGE,PLUM CITY,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+PIERCE/ST. CROIX,VILLAGE,SPRING VALLEY,Optical Scan,Sequoia,Eagle,SEQ-AVC Edge II 5.0.24
+POLK,CITY,AMERY,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+POLK,CITY,ST. CROIX FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,ALDEN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,APPLE RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,BALSAM LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,BEAVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,BLACK BROOK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,BONE LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,CLAM FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,CLAYTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,CLEAR LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,EUREKA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,FARMINGTON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,GARFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,GEORGETOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,JOHNSTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,LAKETOWN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,LINCOLN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,LORAIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,LUCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,MCKINLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,MILLTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,OSCEOLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,ST. CROIX FALLS,Direct Recording Electronic,Sequoia,AVC Edge II,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,STERLING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,TOWN,WEST SWEDEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,BALSAM LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,CENTURIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,CLAYTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,CLEAR LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,DRESSER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,FREDERIC,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,LUCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,MILLTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+POLK,VILLAGE,OSCEOLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PORTAGE,CITY,STEVENS POINT,Optical Scan,ES&S,M100,ES&S AutoMARK
+PORTAGE,TOWN,ALBAN,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,ALMOND,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,AMHERST,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,BELMONT,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,BUENA VISTA,Optical Scan,ES&S,M100,ES&S AutoMARK
+PORTAGE,TOWN,CARSON,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,DEWEY,Optical Scan,ES&S,DS200,ES&S AutoMARK
+PORTAGE,TOWN,EAU PLEINE,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,GRANT,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+PORTAGE,TOWN,HULL,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+PORTAGE,TOWN,LANARK,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,LINWOOD,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,NEW HOPE,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,PINE GROVE,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,TOWN,PLOVER,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+PORTAGE,TOWN,SHARON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+PORTAGE,TOWN,STOCKTON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+PORTAGE,VILLAGE,ALMOND,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,AMHERST,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,AMHERST JUNCTION,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,JUNCTION CITY,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,NELSONVILLE,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,PARK RIDGE,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,PLOVER,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+PORTAGE,VILLAGE,ROSHOLT,Paper Ballot,,,ES&S AutoMARK
+PORTAGE,VILLAGE,WHITING,Optical Scan,ES&S,M100,ES&S AutoMARK
+PRICE,CITY,PARK FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,CITY,PHILLIPS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,CATAWBA,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,EISENSTEIN,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,ELK,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,EMERY,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,FIFIELD,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,FLAMBEAU,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,GEORGETOWN,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,HACKETT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,HARMONY,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,HILL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,KENNAN,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,KNOX,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,LAKE,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,OGEMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,PRENTICE,Paper Ballot,,,Vote-Pad
+PRICE,TOWN,SPIRIT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+PRICE,TOWN,WORCESTER,Paper Ballot,,,Vote-Pad
+PRICE,VILLAGE,CATAWBA,Paper Ballot,,,Vote-Pad
+PRICE,VILLAGE,KENNAN,Paper Ballot,,,Vote-Pad
+PRICE,VILLAGE,PRENTICE,Paper Ballot,,,Vote-Pad
+RACINE,CITY,RACINE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,BURLINGTON,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,DOVER,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,NORWAY,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,RAYMOND,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,ROCHESTER,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,WATERFORD,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,TOWN,YORKVILLE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,CALEDONIA,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,ELMWOOD PARK,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,MOUNT PLEASANT,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,NORTH BAY,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,ROCHESTER,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,STURTEVANT,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,UNION GROVE,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,WATERFORD,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE,VILLAGE,WIND POINT,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RACINE/WALWORTH,CITY,BURLINGTON,Optical Scan,Command Central,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+RICHLAND,CITY,RICHLAND CENTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,AKAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,BLOOM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,BUENA VISTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,DAYTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,EAGLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,FOREST,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,HENRIETTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,ITHACA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,MARSHALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,ORION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,RICHLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,RICHWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,ROCKBRIDGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,SYLVAN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,WESTFORD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,TOWN,WILLOW,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,VILLAGE,BOAZ,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,VILLAGE,LONE ROCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND,VILLAGE,YUBA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND/SAUK,VILLAGE,CAZENOVIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RICHLAND/VERNON,VILLAGE,VIOLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ROCK,CITY,BELOIT,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+ROCK,CITY,EVANSVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,CITY,JANESVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,CITY,MILTON,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+ROCK,TOWN,AVON,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,BELOIT,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,BRADFORD,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,CENTER,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,CLINTON,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,FULTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,HARMONY,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,JANESVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,TOWN,JOHNSTOWN,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,LA PRAIRIE,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,LIMA,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,MAGNOLIA,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,MILTON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,TOWN,NEWARK,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,PLYMOUTH,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+ROCK,TOWN,PORTER,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,ROCK,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,TOWN,SPRING VALLEY,Paper Ballot,,,ES&S AutoMARK
+ROCK,TOWN,TURTLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,TOWN,UNION,Paper Ballot,,,ES&S AutoMARK
+ROCK,VILLAGE,CLINTON,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK,VILLAGE,FOOTVILLE,Paper Ballot,,,ES&S AutoMARK
+ROCK,VILLAGE,ORFORDVILLE,Optical Scan,ES&S,Eagle w/ modem,ES&S AutoMARK
+ROCK/DANE,CITY,EDGERTON,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+RUSK,CITY,LADYSMITH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,ATLANTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,BIG BEND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,BIG FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,CEDAR RAPIDS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,DEWEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,FLAMBEAU,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,GRANT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,GROW,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,HAWKINS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,HUBBARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,LAWRENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,MARSHALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,MURRY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,RICHLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,RUSK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,SOUTH FORK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,STRICKLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,STUBBS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,THORNAPPLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,TRUE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,WASHINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,WILKINSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,WILLARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,TOWN,WILSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,BRUCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,CONRATH,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,GLEN FLORA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,HAWKINS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,INGRAM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,SHELDON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,TONY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+RUSK,VILLAGE,WEYERHAEUSER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAUK,CITY,BARABOO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,CITY,REEDSBURG,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,BARABOO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,BEAR CREEK,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,DELLONA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,DELTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,EXCELSIOR,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,FAIRFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,FRANKLIN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,FREEDOM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,GREENFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,HONEY CREEK,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,IRONTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,LA VALLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,MERRIMAC,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,PRAIRIE DU SAC,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,REEDSBURG,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,SPRING GREEN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,SUMPTER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,TROY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,WESTFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,WINFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,TOWN,WOODLAND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,IRONTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,LAKE DELTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,LAVALLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,LIME RIDGE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,LOGANVILLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,MERRIMAC,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,NORTH FREEDOM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,PLAIN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,PRAIRIE DU SAC,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,ROCK SPRINGS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,SAUK CITY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,SPRING GREEN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAUK,VILLAGE,WEST BARABOO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+SAWYER,CITY,HAYWARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,BASS LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,COUDERAY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,DRAPER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,EDGEWATER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,HAYWARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,HUNTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,LENROOT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,MEADOWBROOK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,METEOR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,OJIBWA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,RADISSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,ROUND LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,SAND LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,SPIDER LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,WEIRGOR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,TOWN,WINTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,VILLAGE,COUDERAY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,VILLAGE,EXELAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,VILLAGE,RADISSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SAWYER,VILLAGE,WINTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,CITY,SHAWANO,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,ALMON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,ANGELICA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,ANIWA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,BARTELME,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,BELLE PLAINE,Optical Scan,Command Central,Eagle,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,BIRNAMWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,FAIRBANKS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,GERMANIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,GRANT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,GREEN VALLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,HARTLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,HERMAN,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,HUTCHINS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,LESSOR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,MAPLE GROVE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,MORRIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,NAVARINO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,PELLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,RED SPRINGS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,RICHMOND,Optical Scan,Command Central,Optech Eagle,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,SENECA,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,WASHINGTON,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,WAUKECHON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,WESCOTT,Optical Scan,Command Central,Optech Eagle,SEQ-AVC Edge II 5.0.24
+SHAWANO,TOWN,WITTENBERG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,ANIWA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,BONDUEL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,BOWLER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,CECIL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,ELAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,GRESHAM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,MATTOON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,TIGERTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO,VILLAGE,WITTENBERG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHAWANO/WAUPACA,CITY,MARION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,CITY,PLYMOUTH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,CITY,SHEBOYGAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,CITY,SHEBOYGAN FALLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,GREENBUSH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,HERMAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,HOLLAND,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,LIMA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,LYNDON,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,MITCHELL,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,MOSEL,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,PLYMOUTH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,RHINE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,RUSSELL,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,SCOTT,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,SHEBOYGAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,SHEBOYGAN FALLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,SHERMAN,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,TOWN,WILSON,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,ADELL,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,CASCADE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,CEDAR GROVE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,ELKHART LAKE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,GLENBEULAH,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,HOWARDS GROVE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,KOHLER,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,OOSTBURG,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,RANDOM LAKE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+SHEBOYGAN,VILLAGE,WALDO,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+ST. CROIX,CITY,GLENWOOD CITY,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,CITY,HUDSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,CITY,NEW RICHMOND,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,BALDWIN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,CADY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,CYLON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,EAU GALLE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,EMERALD,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,ERIN PRAIRIE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,FOREST,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,GLENWOOD,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,HAMMOND,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,HUDSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,KINNICKINNIC,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,PLEASANT VALLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,RICHMOND,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,RUSH RIVER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,SOMERSET,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,SPRINGFIELD,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,ST JOSEPH,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,STANTON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,STAR PRAIRIE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,TROY,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,TOWN,WARREN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,BALDWIN,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,DEER PARK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,HAMMOND,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,NORTH HUDSON,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,ROBERTS,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,SOMERSET,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,STAR PRAIRIE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,WILSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+ST. CROIX,VILLAGE,WOODVILLE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+ST. CROIX/PIERCE,CITY,RIVER FALLS,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+TAYLOR,CITY,MEDFORD,Optical Scan,ES&S,M100,ES&S iVotronic
+TAYLOR,TOWN,AURORA,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,BROWNING,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,CHELSEA,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,CLEVELAND,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,DEER CREEK,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,FORD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,GOODRICH,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,GREENWOOD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,GROVER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,HAMMEL,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,HOLWAY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,JUMP RIVER,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,LITTLE BLACK,Optical Scan,ES&S,M100,ES&S iVotronic
+TAYLOR,TOWN,MAPLEHURST,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,MCKINLEY,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,MEDFORD,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,MOLITOR,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,PERSHING,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,RIB LAKE,Optical Scan,ES&S,M100,ES&S iVotronic
+TAYLOR,TOWN,ROOSEVELT,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,TAFT,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,TOWN,WESTBORO,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,VILLAGE,GILMAN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,VILLAGE,LUBLIN,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,VILLAGE,RIB LAKE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TAYLOR,VILLAGE,STETSONVILLE,Optical Scan,ES&S,150 Central Count,ES&S iVotronic
+TREMPEALEAU,CITY,ARCADIA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,CITY,BLAIR,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,CITY,GALESVILLE,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,CITY,INDEPENDENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,CITY,OSSEO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,CITY,WHITEHALL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,ALBION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,ARCADIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,BURNSIDE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,CALEDONIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,CHIMNEY ROCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,DODGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,ETTRICK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,GALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,HALE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,LINCOLN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,PIGEON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,PRESTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,SUMNER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,TREMPEALEAU,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,TOWN,UNITY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,VILLAGE,ELEVA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,VILLAGE,ETTRICK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,VILLAGE,PIGEON FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,VILLAGE,STRUM,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+TREMPEALEAU,VILLAGE,TREMPEALEAU,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+VERNON,CITY,HILLSBORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,CITY,VIROQUA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+VERNON,CITY,WESTBY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,BERGEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,CHRISTIANA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,CLINTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,COON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,FOREST,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,FRANKLIN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,GENOA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,GREENWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,HAMBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,HARMONY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,HILLSBORO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,JEFFERSON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,KICKAPOO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,LIBERTY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,STARK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,STERLING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,UNION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,VIROQUA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,WEBSTER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,WHEATLAND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,TOWN,WHITESTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,CHASEBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,COON VALLEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,GENOA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,LA FARGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,ONTARIO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,READSTOWN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VERNON,VILLAGE,STODDARD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+VILAS,CITY,EAGLE RIVER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,ARBOR VITAE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,BOULDER JUNCTION,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,CLOVERLAND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,CONOVER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,LAC DU FLAMBEAU,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,LAND O'LAKES,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,LINCOLN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,MANITOWISH WATERS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,PHELPS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,PLUM LAKE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,PRESQUE ISLE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,ST. GERMAIN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,WASHINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+VILAS,TOWN,WINCHESTER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,CITY,DELAVAN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,CITY,ELKHORN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,CITY,LAKE GENEVA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,BLOOMFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,DARIEN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,DELAVAN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,EAST TROY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,GENEVA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,LA GRANGE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,LAFAYETTE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,LINN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,LYONS,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,RICHMOND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,SHARON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,SPRING PRAIRIE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,SUGAR CREEK,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,TROY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,WALWORTH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,TOWN,WHITEWATER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,DARIEN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,EAST TROY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,FONTANA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,SHARON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,WALWORTH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH,VILLAGE,WILLIAMS BAY,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WALWORTH/WAUKES,VILLAGE,MUKWONAGO,Optical Scan,Premier,AccuVote-ES 2000,ES&S AutoMARK
+WASHBURN,CITY,SHELL LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,CITY,SPOONER,Optical Scan,Sequoia,Optech Insight,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BARRONETT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BASHAW,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BASS LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BEAVER BROOK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BIRCHWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,BROOKLYN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,CASEY,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,CHICOG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,CRYSTAL,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,EVERGREEN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,FROG CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,GULL LAKE,Paper Ballot,,,Populex
+WASHBURN,TOWN,LONG LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,MADGE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,MINONG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,SARONA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,SPOONER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,SPRINGBROOK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,STINNETT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,STONE LAKE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,TOWN,TREGO,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,VILLAGE,BIRCHWOOD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHBURN,VILLAGE,MINONG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WASHINGTON,CITY,WEST BEND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,ADDISON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,BARTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,ERIN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,FARMINGTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,GERMANTOWN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,HARTFORD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,JACKSON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,KEWASKUM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,POLK,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,RICHFIELD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,TRENTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,WAYNE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,TOWN,WEST BEND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,VILLAGE,GERMANTOWN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,VILLAGE,JACKSON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON,VILLAGE,SLINGER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WASHINGTON/FOND,VILLAGE,KEWASKUM,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WAUKESHA,CITY,BROOKFIELD,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,DELAFIELD,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,MUSKEGO,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,NEW BERLIN,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,OCONOMOWOC,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,PEWAUKEE,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,CITY,WAUKESHA,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,BROOKFIELD,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,DELAFIELD,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,EAGLE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,GENESEE,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,LISBON,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,MERTON,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,MUKWONAGO,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,OCONOMOWOC,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,OTTAWA,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,SUMMIT,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,VERNON,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,TOWN,WAUKESHA,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,BIG BEND,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,BUTLER,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,CHENEQUA,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,DOUSMAN,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,EAGLE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,ELM GROVE,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,HARTLAND,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,LANNON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,MENOMONEE FALLS,Optical Scan,ES&S,Eagle (w/ modem & no,ES&S AutoMARK
+WAUKESHA,VILLAGE,MERTON,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,NASHOTAH,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,NORTH PRAIRIE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,OCONOMOWOC LAKE,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,PEWAUKEE,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,SUSSEX,Optical Scan,ES&S,Eagle (w/ modem & no,SEQ-AVC Edge II 5.0.24
+WAUKESHA,VILLAGE,WALES,Optical Scan,ES&S,Eagle w/ modem,SEQ-AVC Edge II 5.0.24
+WAUKESHA/JEFFERSON,VILLAGE,LAC LA BELLE,Optical Scan,ES&S,Eagle w/ modem   SEQ-AVC Edge II 5.0.24,Eagle w/ modem   SEQ-AVC Edge II 5.0.24
+WAUPACA,CITY,CLINTONVILLE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+WAUPACA,CITY,MANAWA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,CITY,WAUPACA,Optical Scan,ES&S,Eagle,SEQ-AVC Edge II 5.0.24
+WAUPACA,CITY,WEYAUWEGA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,BEAR CREEK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,CALEDONIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,DAYTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,DUPONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,FARMINGTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,FREMONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,HARRISON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,HELVETIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,IOLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,LARRABEE,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,LEBANON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,LIND,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,LITTLE WOLF,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,MATTESON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,MUKWA,Optical Scan,Premier,AccuVote-ES 2000,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,ROYALTON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,SAINT LAWRENCE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,SCANDINAVIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,UNION,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,WAUPACA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,WEYAUWEGA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,TOWN,WYOMING,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,BIG FALLS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,EMBARRASS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,FREMONT,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,IOLA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,OGDENSBURG,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA,VILLAGE,SCANDINAVIA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUPACA/OUTAGAMIE,CITY,NEW LONDON,Optical Scan,ES&S,Eagle SEQ-AVC Edge II 5.0.24,Eagle SEQ-AVC Edge II 5.0.24
+WAUSHARA,CITY,WAUTOMA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WAUSHARA,TOWN,AURORA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,BLOOMFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,COLOMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,DAKOTA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,DEERFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,HANCOCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,LEON,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,MARION,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WAUSHARA,TOWN,MOUNT MORRIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,OASIS,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,PLAINFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,POY SIPPI,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,RICHFORD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,ROSE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,SAXEVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,SPRINGWATER,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,WARREN,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,TOWN,WAUTOMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,COLOMA,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,HANCOCK,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,LOHRVILLE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,PLAINFIELD,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,REDGRANITE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WAUSHARA,VILLAGE,WILD ROSE,Paper Ballot,,,SEQ-AVC Edge II 5.0.24
+WINNEBAGO,CITY,NEENAH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,CITY,OMRO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,CITY,OSHKOSH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,ALGOMA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,BLACK WOLF,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,CLAYTON,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,MENASHA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,NEENAH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,NEKIMI,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,NEPEUSKUN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,OMRO,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,OSHKOSH,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,POYGAN,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,RUSHFORD,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,UTICA,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,VINLAND,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,WINCHESTER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,WINNECONNE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,TOWN,WOLF RIVER,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WINNEBAGO,VILLAGE,WINNECONNE,Optical Scan,Premier,AccuVote-ES 2000,Premier AccuVote TSX
+WOOD,CITY,NEKOOSA,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,CITY,PITTSVILLE,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,CITY,WISCONSIN RAPIDS,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+WOOD,TOWN,ARPIN (combined w/,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,AUBURNDALE,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,CAMERON,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,CARY,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,CRANMOOR,Paper Ballot,,,ES&S AutoMARK
+WOOD,TOWN,DEXTER,Paper Ballot,,,ES&S AutoMARK
+WOOD,TOWN,GRAND RAPIDS,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,HANSEN,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,HILES,Paper Ballot,,,ES&S AutoMARK
+WOOD,TOWN,LINCOLN,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,MARSHFIELD,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,MILLADORE,Paper Ballot,,,ES&S AutoMARK
+WOOD,TOWN,PORT EDWARDS,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,REMINGTON,Paper Ballot,,,ES&S AutoMARK
+WOOD,TOWN,RICHFIELD,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,ROCK,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,RUDOLPH,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,SARATOGA,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,SENECA,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,SHERRY,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,SIGEL,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,TOWN,WOOD,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,ARPIN,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,AUBURNDALE,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,BIRON,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,HEWITT (combined w/,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,PORT EDWARDS,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD,VILLAGE,RUDOLPH,Paper Ballot,,,ES&S AutoMARK
+WOOD,VILLAGE,VESPER,Optical Scan,ES&S,DS200,ES&S AutoMARK
+WOOD/MARATHON,CITY,MARSHFIELD,Optical Scan,ES&S,Eagle,ES&S AutoMARK
+WOOD/PORTAGE,VILLAGE,MILLADORE,Optical Scan,ES&S,DS200,ES&S AutoMARK
